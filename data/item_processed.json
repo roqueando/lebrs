@@ -1,0 +1,5041 @@
+[
+    {
+        "id": "1001",
+        "name": "Botas",
+        "stats": {
+            "FlatMovementSpeedMod": 25
+        }
+    },
+    {
+        "id": "1004",
+        "name": "Amuleto da Fada",
+        "stats": null
+    },
+    {
+        "id": "1006",
+        "name": "Pérola do Rejuvenescimento",
+        "stats": null
+    },
+    {
+        "id": "1011",
+        "name": "Cinto do Gigante",
+        "stats": {
+            "FlatHPPoolMod": 350
+        }
+    },
+    {
+        "id": "1018",
+        "name": "Capa da Agilidade",
+        "stats": {
+            "FlatCritChanceMod": 0.15
+        }
+    },
+    {
+        "id": "1026",
+        "name": "Varinha Explosiva",
+        "stats": {
+            "FlatMagicDamageMod": 45
+        }
+    },
+    {
+        "id": "1027",
+        "name": "Cristal de Safira",
+        "stats": {
+            "FlatMPPoolMod": 250
+        }
+    },
+    {
+        "id": "1028",
+        "name": "Cristal de Rubi",
+        "stats": {
+            "FlatHPPoolMod": 150
+        }
+    },
+    {
+        "id": "1029",
+        "name": "Couraça de Pano",
+        "stats": {
+            "FlatArmorMod": 15
+        }
+    },
+    {
+        "id": "1031",
+        "name": "Cota de Malha",
+        "stats": {
+            "FlatArmorMod": 40
+        }
+    },
+    {
+        "id": "1033",
+        "name": "Manto Anula-Magia",
+        "stats": {
+            "FlatSpellBlockMod": 25
+        }
+    },
+    {
+        "id": "1035",
+        "name": "Lâmina Cálida",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "60",
+            "Effect2Amount": "25",
+            "Effect3Amount": "5",
+            "Effect4Amount": "8"
+        }
+    },
+    {
+        "id": "1036",
+        "name": "Espada Longa",
+        "stats": {
+            "FlatPhysicalDamageMod": 10
+        }
+    },
+    {
+        "id": "1037",
+        "name": "Picareta",
+        "stats": {
+            "FlatPhysicalDamageMod": 25
+        }
+    },
+    {
+        "id": "1038",
+        "name": "Espada G. p. C.",
+        "stats": {
+            "FlatPhysicalDamageMod": 40
+        }
+    },
+    {
+        "id": "1039",
+        "name": "Lâmina Álgida",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "60",
+            "Effect2Amount": "25",
+            "Effect3Amount": "5",
+            "Effect4Amount": "8"
+        }
+    },
+    {
+        "id": "1040",
+        "name": "Lâmina de Obsidiana",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "60",
+            "Effect2Amount": "25",
+            "Effect3Amount": "5",
+            "Effect4Amount": "8"
+        }
+    },
+    {
+        "id": "1042",
+        "name": "Adaga",
+        "stats": {
+            "PercentAttackSpeedMod": 0.1
+        }
+    },
+    {
+        "id": "1043",
+        "name": "Arco Recurvo",
+        "stats": {
+            "PercentAttackSpeedMod": 0.15
+        }
+    },
+    {
+        "id": "1052",
+        "name": "Tomo Amplificador",
+        "stats": {
+            "FlatMagicDamageMod": 20
+        }
+    },
+    {
+        "id": "1053",
+        "name": "Cetro Vampírico",
+        "stats": {
+            "FlatPhysicalDamageMod": 15,
+            "PercentLifeStealMod": 0.07
+        }
+    },
+    {
+        "id": "1054",
+        "name": "Escudo de Doran",
+        "stats": {
+            "FlatHPPoolMod": 110,
+            "FlatHPRegenMod": 0.8
+        },
+        "effect": {
+            "Effect1Amount": "8",
+            "Effect2Amount": "5",
+            "Effect3Amount": "45",
+            "Effect4Amount": "0.66"
+        }
+    },
+    {
+        "id": "1055",
+        "name": "Lâmina de Doran",
+        "stats": {
+            "FlatHPPoolMod": 100,
+            "FlatPhysicalDamageMod": 10,
+            "PercentLifeStealMod": 0.035
+        }
+    },
+    {
+        "id": "1056",
+        "name": "Anel de Doran",
+        "stats": {
+            "FlatHPPoolMod": 90,
+            "FlatMagicDamageMod": 18
+        }
+    },
+    {
+        "id": "1057",
+        "name": "Capa Negatron",
+        "stats": {
+            "FlatSpellBlockMod": 50
+        }
+    },
+    {
+        "id": "1058",
+        "name": "Bastão Desnecessariamente Grande",
+        "stats": {
+            "FlatMagicDamageMod": 70
+        }
+    },
+    {
+        "id": "1082",
+        "name": "Lacre Sombrio",
+        "stats": {
+            "FlatHPPoolMod": 50,
+            "FlatMagicDamageMod": 15
+        }
+    },
+    {
+        "id": "1083",
+        "name": "Abatedora",
+        "stats": {
+            "FlatPhysicalDamageMod": 7
+        }
+    },
+    {
+        "id": "1101",
+        "name": "Filhote de Garrabrasa",
+        "stats": null
+    },
+    {
+        "id": "1102",
+        "name": "Cria de Andabrisas",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "60",
+            "Effect2Amount": "25",
+            "Effect3Amount": "5",
+            "Effect4Amount": "8"
+        }
+    },
+    {
+        "id": "1103",
+        "name": "Broto de Esmagamusgo",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "60",
+            "Effect2Amount": "25",
+            "Effect3Amount": "5",
+            "Effect4Amount": "8"
+        }
+    },
+    {
+        "id": "1104",
+        "name": "Olho do Arauto",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "240",
+            "Effect2Amount": "1",
+            "Effect3Amount": "20",
+            "Effect4Amount": "180"
+        }
+    },
+    {
+        "id": "126697",
+        "name": "Húbris<br>",
+        "stats": {
+            "FlatPhysicalDamageMod": 60
+        }
+    },
+    {
+        "id": "127008",
+        "name": "Ataraxia",
+        "stats": {
+            "FlatPhysicalDamageMod": 75
+        }
+    },
+    {
+        "id": "1500",
+        "name": "Projétil Perfurante",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "0.3",
+            "Effect2Amount": "0.4",
+            "Effect3Amount": "1.2",
+            "Effect4Amount": "3"
+        }
+    },
+    {
+        "id": "1501",
+        "name": "Fortificação",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "0.5",
+            "Effect2Amount": "5",
+            "Effect3Amount": "0.35"
+        }
+    },
+    {
+        "id": "1502",
+        "name": "Armadura Reforçada",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "66.66"
+        }
+    },
+    {
+        "id": "1503",
+        "name": "Olho do Vigia",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "1000"
+        }
+    },
+    {
+        "id": "1504",
+        "name": "Vanguarda",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "30",
+            "Effect2Amount": "30",
+            "Effect3Amount": "30",
+            "Effect4Amount": "300"
+        }
+    },
+    {
+        "id": "1506",
+        "name": "Armadura Reforçada",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "66",
+            "Effect2Amount": "66"
+        }
+    },
+    {
+        "id": "1507",
+        "name": "Sobrecarga",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "75",
+            "Effect2Amount": "75"
+        }
+    },
+    {
+        "id": "1508",
+        "name": "Meias Antitorre",
+        "stats": null
+    },
+    {
+        "id": "1509",
+        "name": "Entusiasmo",
+        "stats": null
+    },
+    {
+        "id": "1510",
+        "name": "Entusiasmo Sem Noção",
+        "stats": null
+    },
+    {
+        "id": "1511",
+        "name": "Armadura Super Mech",
+        "stats": null
+    },
+    {
+        "id": "1512",
+        "name": "Campo de Força Super Mech",
+        "stats": null
+    },
+    {
+        "id": "1515",
+        "name": "Barricada da Torre",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "40",
+            "Effect2Amount": "125",
+            "Effect3Amount": "20",
+            "Effect4Amount": "45",
+            "Effect5Amount": "0.17"
+        }
+    },
+    {
+        "id": "1516",
+        "name": "Recompensa de estrutura",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "0.3",
+            "Effect2Amount": "0.4",
+            "Effect3Amount": "1.2",
+            "Effect4Amount": "3"
+        }
+    },
+    {
+        "id": "1517",
+        "name": "Recompensa de estrutura",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "0.3",
+            "Effect2Amount": "0.4",
+            "Effect3Amount": "1.2",
+            "Effect4Amount": "3"
+        }
+    },
+    {
+        "id": "1518",
+        "name": "Recompensa de estrutura",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "0.3",
+            "Effect2Amount": "0.4",
+            "Effect3Amount": "1.2",
+            "Effect4Amount": "3"
+        }
+    },
+    {
+        "id": "1519",
+        "name": "Recompensa de estrutura",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "0.3",
+            "Effect2Amount": "0.4",
+            "Effect3Amount": "1.2",
+            "Effect4Amount": "3"
+        }
+    },
+    {
+        "id": "1520",
+        "name": "SobrecarregadoHA",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "75",
+            "Effect2Amount": "75"
+        }
+    },
+    {
+        "id": "1521",
+        "name": "Fortificação",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "0.3",
+            "Effect2Amount": "60",
+            "Effect3Amount": "0.35"
+        }
+    },
+    {
+        "id": "1522",
+        "name": "Fortalecimento de Torre",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "3",
+            "Effect2Amount": "3",
+            "Effect3Amount": "0",
+            "Effect4Amount": "0",
+            "Effect5Amount": "40",
+            "Effect6Amount": "40",
+            "Effect7Amount": "9",
+            "Effect8Amount": "12"
+        }
+    },
+    {
+        "id": "2003",
+        "name": "Poção de Vida",
+        "stats": null
+    },
+    {
+        "id": "2010",
+        "name": "Biscoito Total da Determinação Eterna",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "10"
+        }
+    },
+    {
+        "id": "2015",
+        "name": "Estilhaço de Kircheis",
+        "stats": {
+            "FlatPhysicalDamageMod": 15
+        }
+    },
+    {
+        "id": "2019",
+        "name": "Sigilo de Aço",
+        "stats": {
+            "FlatArmorMod": 30,
+            "FlatPhysicalDamageMod": 15
+        }
+    },
+    {
+        "id": "2020",
+        "name": "Brutalizador",
+        "stats": {
+            "FlatPhysicalDamageMod": 25
+        }
+    },
+    {
+        "id": "2021",
+        "name": "Tunelizador",
+        "stats": {
+            "FlatHPPoolMod": 250,
+            "FlatPhysicalDamageMod": 15
+        }
+    },
+    {
+        "id": "2022",
+        "name": "Partícula Brilhante",
+        "stats": null
+    },
+    {
+        "id": "2031",
+        "name": "Poção com Refil",
+        "stats": null
+    },
+    {
+        "id": "2033",
+        "name": "Poção Corrupta",
+        "stats": null
+    },
+    {
+        "id": "2049",
+        "name": "Amuleto do Guardião",
+        "stats": {
+            "FlatMagicDamageMod": 20
+        }
+    },
+    {
+        "id": "2050",
+        "name": "Proteção do Guardião",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatMagicDamageMod": 35
+        }
+    },
+    {
+        "id": "2051",
+        "name": "Berrante do Guardião",
+        "stats": {
+            "FlatHPPoolMod": 150,
+            "FlatHPRegenMod": 4
+        },
+        "effect": {
+            "Effect1Amount": "15",
+            "Effect2Amount": "0.25"
+        }
+    },
+    {
+        "id": "2052",
+        "name": "Poritos",
+        "stats": null
+    },
+    {
+        "id": "2055",
+        "name": "Sentinela de Controle",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "1",
+            "Effect2Amount": "2"
+        }
+    },
+    {
+        "id": "2056",
+        "name": "Sentinela Invisível",
+        "stats": null
+    },
+    {
+        "id": "2065",
+        "name": "Hino Bélico de Shurelya",
+        "stats": {
+            "FlatMagicDamageMod": 50,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "2138",
+        "name": "Elixir de Ferro",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "300",
+            "Effect2Amount": "0.25",
+            "Effect3Amount": "3",
+            "Effect4Amount": "0.15",
+            "Effect5Amount": "0.15",
+            "Effect6Amount": "0",
+            "Effect7Amount": "0",
+            "Effect8Amount": "9"
+        }
+    },
+    {
+        "id": "2139",
+        "name": "Elixir da Feitiçaria",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "50",
+            "Effect2Amount": "50",
+            "Effect3Amount": "25",
+            "Effect4Amount": "3",
+            "Effect5Amount": "5",
+            "Effect6Amount": "3",
+            "Effect7Amount": "0",
+            "Effect8Amount": "9"
+        }
+    },
+    {
+        "id": "2140",
+        "name": "Elixir da Ira",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "30",
+            "Effect2Amount": "30",
+            "Effect3Amount": "0.12",
+            "Effect4Amount": "3",
+            "Effect5Amount": "0",
+            "Effect6Amount": "0",
+            "Effect7Amount": "0",
+            "Effect8Amount": "9"
+        }
+    },
+    {
+        "id": "2141",
+        "name": "Suco de Chapéu",
+        "stats": null
+    },
+    {
+        "id": "2142",
+        "name": "Suco de Poder",
+        "stats": null
+    },
+    {
+        "id": "2143",
+        "name": "Suco de Vigor",
+        "stats": null
+    },
+    {
+        "id": "2144",
+        "name": "Suco de Aceleração",
+        "stats": null
+    },
+    {
+        "id": "2145",
+        "name": "Dado da Sorte",
+        "stats": null
+    },
+    {
+        "id": "2150",
+        "name": "Elixir da Habilidade",
+        "stats": null
+    },
+    {
+        "id": "2151",
+        "name": "Elixir da Avareza",
+        "stats": null
+    },
+    {
+        "id": "2152",
+        "name": "Elixir da Força",
+        "stats": null
+    },
+    {
+        "id": "220000",
+        "name": "Atributo adicional",
+        "stats": null
+    },
+    {
+        "id": "220001",
+        "name": "Item Lendário de Lutador",
+        "stats": null
+    },
+    {
+        "id": "220002",
+        "name": "Item Lendário de Atirador",
+        "stats": null
+    },
+    {
+        "id": "220003",
+        "name": "Item Lendário de Assassino",
+        "stats": null
+    },
+    {
+        "id": "220004",
+        "name": "Item Lendário de Mago",
+        "stats": null
+    },
+    {
+        "id": "220005",
+        "name": "Item Lendário de Tanque",
+        "stats": null
+    },
+    {
+        "id": "220006",
+        "name": "Item Lendário de Suporte",
+        "stats": null
+    },
+    {
+        "id": "220007",
+        "name": "Item Prismático",
+        "stats": null
+    },
+    {
+        "id": "221011",
+        "name": "Cinto do Gigante",
+        "stats": {
+            "FlatHPPoolMod": 300
+        }
+    },
+    {
+        "id": "221026",
+        "name": "Varinha Explosiva",
+        "stats": {
+            "FlatMagicDamageMod": 50
+        }
+    },
+    {
+        "id": "221031",
+        "name": "Cota de Malha",
+        "stats": {
+            "FlatArmorMod": 30
+        }
+    },
+    {
+        "id": "221038",
+        "name": "Espada G. p. C.",
+        "stats": {
+            "FlatPhysicalDamageMod": 40
+        }
+    },
+    {
+        "id": "221043",
+        "name": "Arco Recurvo",
+        "stats": {
+            "PercentAttackSpeedMod": 0.3
+        }
+    },
+    {
+        "id": "221053",
+        "name": "Cetro Vampírico",
+        "stats": {
+            "FlatPhysicalDamageMod": 20,
+            "PercentLifeStealMod": 0.1
+        }
+    },
+    {
+        "id": "221057",
+        "name": "Capa Negatron",
+        "stats": {
+            "FlatSpellBlockMod": 30
+        }
+    },
+    {
+        "id": "221058",
+        "name": "Bastão Desnecessariamente Grande",
+        "stats": {
+            "FlatMagicDamageMod": 120
+        }
+    },
+    {
+        "id": "222022",
+        "name": "Partícula Brilhante",
+        "stats": null
+    },
+    {
+        "id": "222051",
+        "name": "Berrante do Guardião",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatHPRegenMod": 4
+        },
+        "effect": {
+            "Effect1Amount": "12",
+            "Effect2Amount": "0.25"
+        }
+    },
+    {
+        "id": "222065",
+        "name": "Hino Bélico de Shurelya",
+        "stats": {
+            "FlatMagicDamageMod": 55,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "222141",
+        "name": "Suco de Chapéu",
+        "stats": null
+    },
+    {
+        "id": "222502",
+        "name": "Desespero Eterno",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatArmorMod": 45
+        }
+    },
+    {
+        "id": "222503",
+        "name": "Tocha de Chamas Negras",
+        "stats": {
+            "FlatMPPoolMod": 600,
+            "FlatMagicDamageMod": 60
+        }
+    },
+    {
+        "id": "222504",
+        "name": "Rookern Lamúrico",
+        "stats": {
+            "FlatSpellBlockMod": 80,
+            "FlatHPPoolMod": 350
+        }
+    },
+    {
+        "id": "223001",
+        "name": "Proteção Imutável",
+        "stats": {
+            "FlatSpellBlockMod": 30,
+            "FlatHPPoolMod": 400,
+            "FlatArmorMod": 30
+        }
+    },
+    {
+        "id": "223002",
+        "name": "Desbravador",
+        "stats": {
+            "FlatHPPoolMod": 200,
+            "FlatArmorMod": 40,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "223003",
+        "name": "Cajado do Arcanjo",
+        "stats": {
+            "FlatMPPoolMod": 600,
+            "FlatHPPoolMod": 350,
+            "FlatMagicDamageMod": 60
+        }
+    },
+    {
+        "id": "223004",
+        "name": "Manamune",
+        "stats": {
+            "FlatMPPoolMod": 500,
+            "FlatPhysicalDamageMod": 45
+        }
+    },
+    {
+        "id": "223005",
+        "name": "Ghostcrawlers",
+        "stats": {
+            "FlatMovementSpeedMod": 55
+        }
+    },
+    {
+        "id": "223006",
+        "name": "Grevas do Berserker",
+        "stats": {
+            "FlatMovementSpeedMod": 30,
+            "PercentAttackSpeedMod": 0.45
+        }
+    },
+    {
+        "id": "223009",
+        "name": "Botas da Rapidez",
+        "stats": {
+            "FlatMovementSpeedMod": 70
+        },
+        "effect": {
+            "Effect1Amount": "0.4"
+        }
+    },
+    {
+        "id": "223011",
+        "name": "Putrificador Quimtec",
+        "stats": {
+            "FlatMagicDamageMod": 40
+        }
+    },
+    {
+        "id": "223020",
+        "name": "Sapatos do Feiticeiro",
+        "stats": {
+            "FlatMovementSpeedMod": 55
+        },
+        "effect": {
+            "Effect1Amount": "22"
+        }
+    },
+    {
+        "id": "223026",
+        "name": "Anjo Guardião",
+        "stats": {
+            "FlatArmorMod": 40,
+            "FlatPhysicalDamageMod": 45
+        },
+        "effect": {
+            "Effect1Amount": "0.5",
+            "Effect2Amount": "4",
+            "Effect3Amount": "45",
+            "Effect4Amount": "1"
+        }
+    },
+    {
+        "id": "223031",
+        "name": "Gume do Infinito",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 55
+        }
+    },
+    {
+        "id": "223032",
+        "name": "Flechatroz de Yun Tal",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 50
+        }
+    },
+    {
+        "id": "223033",
+        "name": "Lembrete Mortal",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 30
+        }
+    },
+    {
+        "id": "223036",
+        "name": "Lembranças do Lorde Dominik",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 30
+        },
+        "effect": {
+            "Effect1Amount": "0.2"
+        }
+    },
+    {
+        "id": "223039",
+        "name": "Acerto de Contas de Atma",
+        "stats": {
+            "FlatHPPoolMod": 700,
+            "FlatCritChanceMod": 0.15
+        }
+    },
+    {
+        "id": "223040",
+        "name": "Abraço de Seraph",
+        "stats": {
+            "FlatMPPoolMod": 1000,
+            "FlatMagicDamageMod": 80
+        }
+    },
+    {
+        "id": "223042",
+        "name": "Muramana",
+        "stats": {
+            "FlatMPPoolMod": 860,
+            "FlatPhysicalDamageMod": 45
+        }
+    },
+    {
+        "id": "223046",
+        "name": "Dançarina Fantasma",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "PercentAttackSpeedMod": 0.6,
+            "PercentMovementSpeedMod": 0.12
+        }
+    },
+    {
+        "id": "223047",
+        "name": "Botas Galvanizadas de Aço",
+        "stats": {
+            "FlatMovementSpeedMod": 30,
+            "FlatArmorMod": 25
+        },
+        "effect": {
+            "Effect1Amount": "0.14"
+        }
+    },
+    {
+        "id": "223050",
+        "name": "Convergência de Zeke",
+        "stats": {
+            "FlatSpellBlockMod": 25,
+            "FlatHPPoolMod": 300,
+            "FlatArmorMod": 25
+        }
+    },
+    {
+        "id": "223053",
+        "name": "Sinal de Sterak",
+        "stats": {
+            "FlatHPPoolMod": 300
+        }
+    },
+    {
+        "id": "223057",
+        "name": "Fulgor",
+        "stats": null
+    },
+    {
+        "id": "223065",
+        "name": "Semblante Espiritual",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatHPPoolMod": 300
+        }
+    },
+    {
+        "id": "223067",
+        "name": "Gema Ardente",
+        "stats": {
+            "FlatHPPoolMod": 300
+        }
+    },
+    {
+        "id": "223068",
+        "name": "Égide de Fogo Solar",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatArmorMod": 40
+        }
+    },
+    {
+        "id": "223071",
+        "name": "Cutelo Negro",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatPhysicalDamageMod": 40
+        },
+        "effect": {
+            "Effect1Amount": "0",
+            "Effect2Amount": "0.06",
+            "Effect3Amount": "6",
+            "Effect4Amount": "5",
+            "Effect5Amount": "0.3",
+            "Effect6Amount": "0",
+            "Effect7Amount": "0",
+            "Effect8Amount": "0",
+            "Effect9Amount": "0",
+            "Effect10Amount": "0.01"
+        }
+    },
+    {
+        "id": "223072",
+        "name": "Sedenta por Sangue",
+        "stats": {
+            "FlatPhysicalDamageMod": 70,
+            "PercentLifeStealMod": 0.18
+        }
+    },
+    {
+        "id": "223073",
+        "name": "Hexoplaca Experimental",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatPhysicalDamageMod": 55,
+            "PercentAttackSpeedMod": 0.25
+        }
+    },
+    {
+        "id": "223074",
+        "name": "Hidra Raivosa",
+        "stats": {
+            "FlatPhysicalDamageMod": 55,
+            "PercentLifeStealMod": 0.15
+        }
+    },
+    {
+        "id": "223075",
+        "name": "Armadura de Espinhos",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatArmorMod": 60
+        }
+    },
+    {
+        "id": "223078",
+        "name": "Força da Trindade",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatPhysicalDamageMod": 30,
+            "PercentAttackSpeedMod": 0.25
+        },
+        "effect": {
+            "Effect1Amount": "25",
+            "Effect2Amount": "60",
+            "Effect3Amount": "2",
+            "Effect4Amount": "1.5",
+            "Effect5Amount": "1.5"
+        }
+    },
+    {
+        "id": "223084",
+        "name": "Coração de Aço",
+        "stats": {
+            "FlatHPPoolMod": 700
+        }
+    },
+    {
+        "id": "223085",
+        "name": "Furacão de Runaan",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "PercentAttackSpeedMod": 0.45,
+            "PercentMovementSpeedMod": 0.07
+        },
+        "effect": {
+            "Effect1Amount": "0",
+            "Effect2Amount": "40",
+            "Effect3Amount": "2",
+            "Effect4Amount": "0",
+            "Effect5Amount": "40",
+            "Effect6Amount": "1"
+        }
+    },
+    {
+        "id": "223087",
+        "name": "Faca de Statikk",
+        "stats": {
+            "FlatPhysicalDamageMod": 50,
+            "PercentAttackSpeedMod": 0.4
+        }
+    },
+    {
+        "id": "223089",
+        "name": "Capuz da Morte de Rabadon",
+        "stats": {
+            "FlatMagicDamageMod": 70
+        }
+    },
+    {
+        "id": "223091",
+        "name": "Limite da Razão",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "PercentAttackSpeedMod": 0.5
+        }
+    },
+    {
+        "id": "223094",
+        "name": "Canhão Fumegante",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "PercentAttackSpeedMod": 0.3,
+            "PercentMovementSpeedMod": 0.07
+        }
+    },
+    {
+        "id": "223095",
+        "name": "Chuva de Canivete",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 45,
+            "PercentAttackSpeedMod": 0.25
+        }
+    },
+    {
+        "id": "223100",
+        "name": "Perdição de Lich",
+        "stats": {
+            "FlatMagicDamageMod": 80,
+            "PercentMovementSpeedMod": 0.1
+        }
+    },
+    {
+        "id": "223102",
+        "name": "Véu da Banshee",
+        "stats": {
+            "FlatSpellBlockMod": 50,
+            "FlatMagicDamageMod": 80
+        },
+        "effect": {
+            "Effect1Amount": "30",
+            "Effect2Amount": "45",
+            "Effect3Amount": "10",
+            "Effect4Amount": "-0.1",
+            "Effect5Amount": "8",
+            "Effect6Amount": "2"
+        }
+    },
+    {
+        "id": "223105",
+        "name": "Égide da Legião",
+        "stats": {
+            "FlatSpellBlockMod": 25,
+            "FlatArmorMod": 25
+        }
+    },
+    {
+        "id": "223107",
+        "name": "Redenção",
+        "stats": {
+            "FlatHPPoolMod": 300
+        }
+    },
+    {
+        "id": "223109",
+        "name": "Juramento do Cavaleiro",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatArmorMod": 40
+        }
+    },
+    {
+        "id": "223110",
+        "name": "Coração Congelado",
+        "stats": {
+            "FlatMPPoolMod": 400,
+            "FlatArmorMod": 90
+        }
+    },
+    {
+        "id": "223111",
+        "name": "Passos de Mercúrio",
+        "stats": {
+            "FlatSpellBlockMod": 35,
+            "FlatMovementSpeedMod": 30
+        }
+    },
+    {
+        "id": "223112",
+        "name": "Orbe do Guardião",
+        "stats": {
+            "FlatMagicDamageMod": 55
+        },
+        "effect": {
+            "Effect1Amount": "3"
+        }
+    },
+    {
+        "id": "223115",
+        "name": "Dente de Na'Shor",
+        "stats": {
+            "FlatMagicDamageMod": 70,
+            "PercentAttackSpeedMod": 0.45
+        }
+    },
+    {
+        "id": "223116",
+        "name": "Cetro de Cristal de Rylai",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatMagicDamageMod": 60
+        },
+        "effect": {
+            "Effect1Amount": "-0.3",
+            "Effect2Amount": "-0.3",
+            "Effect3Amount": "-0.3",
+            "Effect4Amount": "1",
+            "Effect5Amount": "1",
+            "Effect6Amount": "1"
+        }
+    },
+    {
+        "id": "223118",
+        "name": "Malevolência",
+        "stats": {
+            "FlatMPPoolMod": 600,
+            "FlatMagicDamageMod": 70
+        }
+    },
+    {
+        "id": "223119",
+        "name": "Aproximação Invernal",
+        "stats": {
+            "FlatMPPoolMod": 500,
+            "FlatHPPoolMod": 500
+        }
+    },
+    {
+        "id": "223121",
+        "name": "Fimbulwinter",
+        "stats": {
+            "FlatMPPoolMod": 860,
+            "FlatHPPoolMod": 500
+        }
+    },
+    {
+        "id": "223124",
+        "name": "Lâmina da Fúria de Guinsoo",
+        "stats": {
+            "FlatMagicDamageMod": 25,
+            "FlatPhysicalDamageMod": 20,
+            "PercentAttackSpeedMod": 0.25
+        },
+        "effect": {
+            "Effect1Amount": "0.08",
+            "Effect2Amount": "2.5",
+            "Effect3Amount": "2.5",
+            "Effect4Amount": "3",
+            "Effect5Amount": "4",
+            "Effect6Amount": "0.1",
+            "Effect7Amount": "0.1",
+            "Effect8Amount": "15",
+            "Effect9Amount": "1",
+            "Effect10Amount": "3",
+            "Effect11Amount": "0",
+            "Effect12Amount": "0",
+            "Effect13Amount": "3"
+        }
+    },
+    {
+        "id": "223135",
+        "name": "Cajado do Vazio",
+        "stats": {
+            "FlatMagicDamageMod": 65
+        }
+    },
+    {
+        "id": "223137",
+        "name": "Criptoflora",
+        "stats": {
+            "FlatMagicDamageMod": 60
+        }
+    },
+    {
+        "id": "223139",
+        "name": "Cimitarra Mercurial",
+        "stats": {
+            "FlatSpellBlockMod": 50,
+            "FlatPhysicalDamageMod": 45,
+            "PercentLifeStealMod": 0.1
+        },
+        "effect": {
+            "Effect1Amount": "0.5",
+            "Effect2Amount": "1.5",
+            "Effect3Amount": "45"
+        }
+    },
+    {
+        "id": "223142",
+        "name": "Lâmina Fantasma de Youmuu",
+        "stats": {
+            "FlatPhysicalDamageMod": 60
+        }
+    },
+    {
+        "id": "223143",
+        "name": "Presságio de Randuin",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatArmorMod": 75
+        }
+    },
+    {
+        "id": "223146",
+        "name": "Pistola Laminar Hextec",
+        "stats": {
+            "FlatMagicDamageMod": 90,
+            "FlatPhysicalDamageMod": 45
+        }
+    },
+    {
+        "id": "223152",
+        "name": "Explocinturão Hextec",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatMagicDamageMod": 95
+        }
+    },
+    {
+        "id": "223153",
+        "name": "Espada do Rei Destruído",
+        "stats": {
+            "FlatPhysicalDamageMod": 30,
+            "PercentAttackSpeedMod": 0.2,
+            "PercentLifeStealMod": 0.1
+        }
+    },
+    {
+        "id": "223156",
+        "name": "Mandíbula de Malmortius",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatPhysicalDamageMod": 50
+        }
+    },
+    {
+        "id": "223157",
+        "name": "Ampulheta de Zhonya",
+        "stats": {
+            "FlatMagicDamageMod": 80,
+            "FlatArmorMod": 50
+        },
+        "effect": {
+            "Effect1Amount": "0",
+            "Effect2Amount": "2.5",
+            "Effect3Amount": "120"
+        }
+    },
+    {
+        "id": "223158",
+        "name": "Botas Ionianas da Lucidez",
+        "stats": {
+            "FlatMovementSpeedMod": 45
+        }
+    },
+    {
+        "id": "223161",
+        "name": "Lança de Shojin",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatPhysicalDamageMod": 40
+        }
+    },
+    {
+        "id": "223165",
+        "name": "Morellonomicon",
+        "stats": {
+            "FlatHPPoolMod": 250,
+            "FlatMagicDamageMod": 80
+        }
+    },
+    {
+        "id": "223172",
+        "name": "Zéfiro",
+        "stats": {
+            "PercentAttackSpeedMod": 0.5,
+            "PercentMovementSpeedMod": 0.1
+        }
+    },
+    {
+        "id": "223177",
+        "name": "Lâmina do Guardião",
+        "stats": {
+            "FlatHPPoolMod": 250,
+            "FlatPhysicalDamageMod": 25
+        },
+        "effect": {
+            "Effect1Amount": "10"
+        }
+    },
+    {
+        "id": "223181",
+        "name": "Quebracascos",
+        "stats": {
+            "FlatHPPoolMod": 450,
+            "FlatMovementSpeedMod": 0.05,
+            "FlatPhysicalDamageMod": 55,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "223184",
+        "name": "Martelo do Guardião",
+        "stats": {
+            "FlatPhysicalDamageMod": 25,
+            "PercentAttackSpeedMod": 0.35,
+            "PercentLifeStealMod": 0.08
+        }
+    },
+    {
+        "id": "223185",
+        "name": "Punhal do Guardião",
+        "stats": {
+            "FlatPhysicalDamageMod": 25
+        }
+    },
+    {
+        "id": "223190",
+        "name": "Medalhão dos Solari de Ferro",
+        "stats": {
+            "FlatSpellBlockMod": 35,
+            "FlatHPPoolMod": 400,
+            "FlatArmorMod": 35
+        }
+    },
+    {
+        "id": "223193",
+        "name": "Placa Gargolítica",
+        "stats": {
+            "FlatSpellBlockMod": 35,
+            "FlatArmorMod": 35
+        }
+    },
+    {
+        "id": "223222",
+        "name": "Bênção de Mikael",
+        "stats": {
+            "FlatHPPoolMod": 400
+        }
+    },
+    {
+        "id": "223302",
+        "name": "Terminus",
+        "stats": {
+            "FlatPhysicalDamageMod": 30,
+            "PercentAttackSpeedMod": 0.25
+        }
+    },
+    {
+        "id": "223504",
+        "name": "Turíbulo Ardente",
+        "stats": {
+            "FlatMagicDamageMod": 30,
+            "PercentMovementSpeedMod": 0.08
+        }
+    },
+    {
+        "id": "223508",
+        "name": "Colhedor de Essência",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 50
+        }
+    },
+    {
+        "id": "223742",
+        "name": "Couraça do Defunto",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatArmorMod": 40,
+            "PercentMovementSpeedMod": 0.07
+        }
+    },
+    {
+        "id": "223748",
+        "name": "Hidra Titânica",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatPhysicalDamageMod": 40
+        }
+    },
+    {
+        "id": "223814",
+        "name": "Limiar da Noite",
+        "stats": {
+            "FlatHPPoolMod": 375,
+            "FlatPhysicalDamageMod": 45
+        },
+        "effect": {
+            "Effect1Amount": "0",
+            "Effect2Amount": "0",
+            "Effect3Amount": "0",
+            "Effect4Amount": "40"
+        }
+    },
+    {
+        "id": "224004",
+        "name": "Alfanje Espectral",
+        "stats": {
+            "FlatPhysicalDamageMod": 55
+        }
+    },
+    {
+        "id": "224005",
+        "name": "Mandato Imperial",
+        "stats": {
+            "FlatMagicDamageMod": 60
+        }
+    },
+    {
+        "id": "224401",
+        "name": "Força da Natureza",
+        "stats": {
+            "FlatSpellBlockMod": 50,
+            "FlatHPPoolMod": 400,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "224403",
+        "name": "Espátula Dourada",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatMPPoolMod": 350,
+            "FlatHPPoolMod": 350,
+            "FlatMagicDamageMod": 150,
+            "FlatArmorMod": 40,
+            "FlatCritChanceMod": 0.35,
+            "FlatPhysicalDamageMod": 100,
+            "PercentAttackSpeedMod": 0.7,
+            "PercentLifeStealMod": 0.15,
+            "PercentMovementSpeedMod": 0.1
+        }
+    },
+    {
+        "id": "224628",
+        "name": "Foco do Horizonte",
+        "stats": {
+            "FlatMagicDamageMod": 80
+        }
+    },
+    {
+        "id": "224629",
+        "name": "Ímpeto Cósmico",
+        "stats": {
+            "FlatHPPoolMod": 250,
+            "FlatMagicDamageMod": 65,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "224633",
+        "name": "Criafendas",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatMagicDamageMod": 60
+        }
+    },
+    {
+        "id": "224636",
+        "name": "Colhedor Noturno",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatMagicDamageMod": 90
+        }
+    },
+    {
+        "id": "224637",
+        "name": "Abraço Demoníaco",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatMagicDamageMod": 45
+        }
+    },
+    {
+        "id": "224644",
+        "name": "Coroa da Rainha Despedaçada",
+        "stats": {
+            "FlatMPPoolMod": 600,
+            "FlatHPPoolMod": 250,
+            "FlatMagicDamageMod": 80
+        }
+    },
+    {
+        "id": "224645",
+        "name": "Chama Sombria",
+        "stats": {
+            "FlatMagicDamageMod": 100
+        }
+    },
+    {
+        "id": "224646",
+        "name": "Ápice da Tempestade",
+        "stats": {
+            "FlatMagicDamageMod": 80,
+            "PercentMovementSpeedMod": 0.08
+        }
+    },
+    {
+        "id": "226035",
+        "name": "Alvorada de Pratânia",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatHPPoolMod": 400,
+            "FlatPhysicalDamageMod": 40
+        },
+        "effect": {
+            "Effect1Amount": "0.5",
+            "Effect2Amount": "1",
+            "Effect3Amount": "45"
+        }
+    },
+    {
+        "id": "226333",
+        "name": "Dança da Morte",
+        "stats": {
+            "FlatArmorMod": 40,
+            "FlatPhysicalDamageMod": 45
+        }
+    },
+    {
+        "id": "226609",
+        "name": "Serrespada Quimiopunk",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatPhysicalDamageMod": 45
+        }
+    },
+    {
+        "id": "226610",
+        "name": "Céu Dividido",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatPhysicalDamageMod": 40
+        }
+    },
+    {
+        "id": "226616",
+        "name": "Cajado Aquafluxo",
+        "stats": {
+            "FlatMagicDamageMod": 30,
+            "PercentMovementSpeedMod": 0.1
+        }
+    },
+    {
+        "id": "226617",
+        "name": "Regenerador de Pedra Lunar",
+        "stats": {
+            "FlatHPPoolMod": 200,
+            "FlatMagicDamageMod": 30
+        }
+    },
+    {
+        "id": "226620",
+        "name": "Ecos de Helia",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatMagicDamageMod": 30
+        }
+    },
+    {
+        "id": "226621",
+        "name": "Auronúcleo",
+        "stats": {
+            "FlatMagicDamageMod": 40
+        }
+    },
+    {
+        "id": "226630",
+        "name": "Hemodrenário",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatPhysicalDamageMod": 45
+        }
+    },
+    {
+        "id": "226631",
+        "name": "Quebrapassos",
+        "stats": {
+            "FlatHPPoolMod": 375,
+            "FlatPhysicalDamageMod": 50,
+            "PercentAttackSpeedMod": 0.15
+        }
+    },
+    {
+        "id": "226632",
+        "name": "Ruptor Divino",
+        "stats": {
+            "FlatHPPoolMod": 200,
+            "FlatPhysicalDamageMod": 30
+        }
+    },
+    {
+        "id": "226653",
+        "name": "Tormento de Liandry",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatMagicDamageMod": 60
+        }
+    },
+    {
+        "id": "226655",
+        "name": "Companheiro de Luden",
+        "stats": {
+            "FlatMPPoolMod": 600,
+            "FlatMagicDamageMod": 80
+        }
+    },
+    {
+        "id": "226656",
+        "name": "Glacieterno",
+        "stats": {
+            "FlatMPPoolMod": 600,
+            "FlatHPPoolMod": 500,
+            "FlatMagicDamageMod": 80
+        }
+    },
+    {
+        "id": "226657",
+        "name": "Bastão das Eras",
+        "stats": {
+            "FlatMPPoolMod": 350,
+            "FlatHPPoolMod": 350,
+            "FlatMagicDamageMod": 60
+        }
+    },
+    {
+        "id": "226662",
+        "name": "Manopla dos Glacinatas",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatArmorMod": 45
+        }
+    },
+    {
+        "id": "226664",
+        "name": "Resplendor Vazio",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatHPPoolMod": 450
+        }
+    },
+    {
+        "id": "226665",
+        "name": "Jak'Sho, o Inconstante",
+        "stats": {
+            "FlatSpellBlockMod": 35,
+            "FlatHPPoolMod": 300,
+            "FlatArmorMod": 35
+        }
+    },
+    {
+        "id": "226667",
+        "name": "Virtude Radiante",
+        "stats": {
+            "FlatSpellBlockMod": 30,
+            "FlatHPPoolMod": 350,
+            "FlatArmorMod": 30
+        }
+    },
+    {
+        "id": "226671",
+        "name": "Força do Vendaval",
+        "stats": {
+            "FlatCritChanceMod": 0.2,
+            "FlatPhysicalDamageMod": 60,
+            "PercentAttackSpeedMod": 0.4,
+            "PercentMovementSpeedMod": 0.07
+        }
+    },
+    {
+        "id": "226672",
+        "name": "Mata-Cráquens",
+        "stats": {
+            "FlatPhysicalDamageMod": 30,
+            "PercentAttackSpeedMod": 0.35,
+            "PercentMovementSpeedMod": 0.07
+        }
+    },
+    {
+        "id": "226673",
+        "name": "Arco-escudo Imortal",
+        "stats": {
+            "FlatCritChanceMod": 0.2,
+            "FlatPhysicalDamageMod": 40,
+            "PercentLifeStealMod": 0.1
+        }
+    },
+    {
+        "id": "226675",
+        "name": "Adaga Oscilante Navori",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "PercentAttackSpeedMod": 0.35,
+            "PercentMovementSpeedMod": 0.07
+        },
+        "effect": {
+            "Effect1Amount": "0.5",
+            "Effect2Amount": "1",
+            "Effect3Amount": "90"
+        }
+    },
+    {
+        "id": "226676",
+        "name": "A Coletora",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 45
+        }
+    },
+    {
+        "id": "226691",
+        "name": "Crepúsculo de Draktharr",
+        "stats": {
+            "FlatPhysicalDamageMod": 60
+        }
+    },
+    {
+        "id": "226692",
+        "name": "Eclipse",
+        "stats": {
+            "FlatPhysicalDamageMod": 60
+        }
+    },
+    {
+        "id": "226693",
+        "name": "Garra do Espreitador",
+        "stats": {
+            "FlatPhysicalDamageMod": 55
+        }
+    },
+    {
+        "id": "226694",
+        "name": "Rancor de Serylda",
+        "stats": {
+            "FlatPhysicalDamageMod": 40
+        }
+    },
+    {
+        "id": "226695",
+        "name": "Presa da Serpente",
+        "stats": {
+            "FlatPhysicalDamageMod": 55
+        }
+    },
+    {
+        "id": "226696",
+        "name": "Arco do Axioma",
+        "stats": {
+            "FlatPhysicalDamageMod": 45
+        }
+    },
+    {
+        "id": "226697",
+        "name": "Húbris",
+        "stats": {
+            "FlatPhysicalDamageMod": 50
+        }
+    },
+    {
+        "id": "226698",
+        "name": "Hidra Profana",
+        "stats": {
+            "FlatPhysicalDamageMod": 50
+        }
+    },
+    {
+        "id": "226699",
+        "name": "Cicloespada Voltaica",
+        "stats": {
+            "FlatPhysicalDamageMod": 45
+        }
+    },
+    {
+        "id": "226701",
+        "name": "Oportunidade",
+        "stats": {
+            "FlatPhysicalDamageMod": 50,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "227001",
+        "name": "Sizígia",
+        "stats": {
+            "FlatPhysicalDamageMod": 90
+        }
+    },
+    {
+        "id": "227002",
+        "name": "Escultor Sombrio de Draktharr",
+        "stats": {
+            "FlatPhysicalDamageMod": 75
+        }
+    },
+    {
+        "id": "227005",
+        "name": "Punho Congelado",
+        "stats": {
+            "FlatHPPoolMod": 550,
+            "FlatArmorMod": 70
+        }
+    },
+    {
+        "id": "227006",
+        "name": "Tufão",
+        "stats": {
+            "FlatCritChanceMod": 0.2,
+            "FlatPhysicalDamageMod": 80,
+            "PercentAttackSpeedMod": 0.55,
+            "PercentMovementSpeedMod": 0.1
+        }
+    },
+    {
+        "id": "227009",
+        "name": "Maldição de Icathia",
+        "stats": {
+            "FlatHPPoolMod": 600,
+            "FlatMagicDamageMod": 90
+        }
+    },
+    {
+        "id": "227010",
+        "name": "Vesperal",
+        "stats": {
+            "FlatHPPoolMod": 500,
+            "FlatMagicDamageMod": 120
+        }
+    },
+    {
+        "id": "227011",
+        "name": "Aeropropulsor Aprimorado",
+        "stats": {
+            "FlatHPPoolMod": 500,
+            "FlatMagicDamageMod": 120
+        }
+    },
+    {
+        "id": "227012",
+        "name": "Lamento de Liandry",
+        "stats": {
+            "FlatMPPoolMod": 800,
+            "FlatHPPoolMod": 300,
+            "FlatMagicDamageMod": 100
+        }
+    },
+    {
+        "id": "227013",
+        "name": "Potência Bélica",
+        "stats": {
+            "FlatMPPoolMod": 800,
+            "FlatMagicDamageMod": 100
+        }
+    },
+    {
+        "id": "227014",
+        "name": "Inverno Eterno",
+        "stats": {
+            "FlatMPPoolMod": 800,
+            "FlatHPPoolMod": 650,
+            "FlatMagicDamageMod": 100
+        }
+    },
+    {
+        "id": "227015",
+        "name": "Fome Incessante",
+        "stats": {
+            "FlatHPPoolMod": 600,
+            "FlatPhysicalDamageMod": 65
+        }
+    },
+    {
+        "id": "227016",
+        "name": "Assolador de Sonhos",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatPhysicalDamageMod": 60,
+            "PercentAttackSpeedMod": 0.3
+        }
+    },
+    {
+        "id": "227017",
+        "name": "Deicídio",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatPhysicalDamageMod": 55
+        }
+    },
+    {
+        "id": "227018",
+        "name": "Força do Infinito",
+        "stats": {
+            "FlatHPPoolMod": 445,
+            "FlatPhysicalDamageMod": 45,
+            "PercentAttackSpeedMod": 0.45
+        },
+        "effect": {
+            "Effect1Amount": "25",
+            "Effect2Amount": "60",
+            "Effect3Amount": "2",
+            "Effect4Amount": "1.5",
+            "Effect5Amount": "1.5"
+        }
+    },
+    {
+        "id": "227019",
+        "name": "Relicário do Alvorecer Dourado",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatHPPoolMod": 600,
+            "FlatArmorMod": 40
+        }
+    },
+    {
+        "id": "227020",
+        "name": "Réquiem de Shurelya",
+        "stats": {
+            "FlatHPPoolMod": 600,
+            "FlatMagicDamageMod": 75,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "227021",
+        "name": "Conjurador Estelar",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatMagicDamageMod": 80
+        }
+    },
+    {
+        "id": "227023",
+        "name": "Equinócio",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatHPPoolMod": 600,
+            "FlatArmorMod": 40
+        }
+    },
+    {
+        "id": "227024",
+        "name": "Cesura",
+        "stats": {
+            "FlatMPPoolMod": 800,
+            "FlatHPPoolMod": 350,
+            "FlatMagicDamageMod": 100
+        }
+    },
+    {
+        "id": "227025",
+        "name": "Leviatã",
+        "stats": {
+            "FlatHPPoolMod": 1050
+        }
+    },
+    {
+        "id": "227026",
+        "name": "O Parasita Silencioso",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatHPPoolMod": 450,
+            "FlatArmorMod": 40
+        }
+    },
+    {
+        "id": "227027",
+        "name": "Amanhecer Primordial",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatHPPoolMod": 550,
+            "FlatArmorMod": 40
+        }
+    },
+    {
+        "id": "227028",
+        "name": "Convergência Infinita",
+        "stats": {
+            "FlatMPPoolMod": 550,
+            "FlatHPPoolMod": 550,
+            "FlatMagicDamageMod": 90
+        }
+    },
+    {
+        "id": "227029",
+        "name": "Velório de Youmuu",
+        "stats": {
+            "FlatPhysicalDamageMod": 75
+        },
+        "effect": {
+            "Effect1Amount": "45",
+            "Effect2Amount": "0",
+            "Effect3Amount": "0",
+            "Effect4Amount": "0",
+            "Effect5Amount": "6",
+            "Effect6Amount": "40"
+        }
+    },
+    {
+        "id": "227030",
+        "name": "Sofrimento Fervente",
+        "stats": {
+            "FlatMagicDamageMod": 35,
+            "FlatPhysicalDamageMod": 35,
+            "PercentAttackSpeedMod": 0.4
+        },
+        "effect": {
+            "Effect1Amount": "0.08",
+            "Effect2Amount": "2.5",
+            "Effect3Amount": "2.5",
+            "Effect4Amount": "3",
+            "Effect5Amount": "4",
+            "Effect6Amount": "0.1",
+            "Effect7Amount": "0.1",
+            "Effect8Amount": "15",
+            "Effect9Amount": "1",
+            "Effect10Amount": "3",
+            "Effect11Amount": "0",
+            "Effect12Amount": "0",
+            "Effect13Amount": "3"
+        }
+    },
+    {
+        "id": "227031",
+        "name": "Gume da Finalidade",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 105
+        }
+    },
+    {
+        "id": "227032",
+        "name": "Cintilação",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 90,
+            "PercentAttackSpeedMod": 0.4,
+            "PercentMovementSpeedMod": 0.07
+        },
+        "effect": {
+            "Effect1Amount": "0.5",
+            "Effect2Amount": "1",
+            "Effect3Amount": "90"
+        }
+    },
+    {
+        "id": "227033",
+        "name": "Choro da Cidade Estridente",
+        "stats": {
+            "FlatHPPoolMod": 500,
+            "FlatMagicDamageMod": 60
+        }
+    },
+    {
+        "id": "228001",
+        "name": "Correntes de Anathema",
+        "stats": {
+            "FlatHPPoolMod": 600
+        }
+    },
+    {
+        "id": "228002",
+        "name": "Chapéu Mágico de Wooglet",
+        "stats": {
+            "FlatMagicDamageMod": 300,
+            "FlatArmorMod": 50
+        },
+        "effect": {
+            "Effect1Amount": "0",
+            "Effect2Amount": "2.5",
+            "Effect3Amount": "20"
+        }
+    },
+    {
+        "id": "228003",
+        "name": "Lâmina Mortal",
+        "stats": {
+            "FlatCritChanceMod": 0.2,
+            "FlatPhysicalDamageMod": 150
+        }
+    },
+    {
+        "id": "228004",
+        "name": "Elmo Adaptativo",
+        "stats": {
+            "FlatSpellBlockMod": 100,
+            "FlatHPPoolMod": 800,
+            "FlatArmorMod": 50,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "228005",
+        "name": "Cutelo Obsidiano",
+        "stats": {
+            "FlatHPPoolMod": 700,
+            "FlatPhysicalDamageMod": 70
+        },
+        "effect": {
+            "Effect1Amount": "0",
+            "Effect2Amount": "0.07",
+            "Effect3Amount": "6",
+            "Effect4Amount": "5",
+            "Effect5Amount": "0.42",
+            "Effect6Amount": "0",
+            "Effect7Amount": "0",
+            "Effect8Amount": "0",
+            "Effect9Amount": "0",
+            "Effect10Amount": "0.01"
+        }
+    },
+    {
+        "id": "228006",
+        "name": "Lâmina Sanguinária",
+        "stats": {
+            "FlatPhysicalDamageMod": 130,
+            "PercentAttackSpeedMod": 0.4,
+            "PercentLifeStealMod": 0.3
+        }
+    },
+    {
+        "id": "228008",
+        "name": "Glaive Rúnica",
+        "stats": {
+            "FlatHPPoolMod": 600,
+            "FlatMagicDamageMod": 85,
+            "FlatArmorMod": 50,
+            "FlatCritChanceMod": 0.2,
+            "FlatPhysicalDamageMod": 65,
+            "PercentAttackSpeedMod": 0.33,
+            "PercentMovementSpeedMod": 0.1
+        },
+        "effect": {
+            "Effect1Amount": "25",
+            "Effect2Amount": "60",
+            "Effect3Amount": "2",
+            "Effect4Amount": "1.5",
+            "Effect5Amount": "1.5"
+        }
+    },
+    {
+        "id": "228020",
+        "name": "Máscara Abissal",
+        "stats": {
+            "FlatSpellBlockMod": 50,
+            "FlatHPPoolMod": 300
+        }
+    },
+    {
+        "id": "2403",
+        "name": "Pulverizador de Tropas",
+        "stats": null
+    },
+    {
+        "id": "2420",
+        "name": "Armaguarda da Caçadora",
+        "stats": {
+            "FlatMagicDamageMod": 45,
+            "FlatArmorMod": 25
+        },
+        "effect": {
+            "Effect1Amount": "0",
+            "Effect2Amount": "2.5"
+        }
+    },
+    {
+        "id": "2421",
+        "name": "Armaguarda Despedaçada",
+        "stats": {
+            "FlatMagicDamageMod": 45,
+            "FlatArmorMod": 25
+        },
+        "effect": {
+            "Effect1Amount": "0",
+            "Effect2Amount": "0",
+            "Effect3Amount": "0",
+            "Effect4Amount": "0",
+            "Effect5Amount": "300"
+        }
+    },
+    {
+        "id": "2422",
+        "name": "Botas Levemente Mágicas",
+        "stats": {
+            "FlatMovementSpeedMod": 25
+        }
+    },
+    {
+        "id": "2501",
+        "name": "Armadura Sangrenta do Suserano",
+        "stats": {
+            "FlatHPPoolMod": 500,
+            "FlatPhysicalDamageMod": 40
+        }
+    },
+    {
+        "id": "2502",
+        "name": "Desespero Eterno",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatArmorMod": 55
+        }
+    },
+    {
+        "id": "2503",
+        "name": "Tocha de Chamas Negras",
+        "stats": {
+            "FlatMPPoolMod": 600,
+            "FlatMagicDamageMod": 90
+        }
+    },
+    {
+        "id": "2504",
+        "name": "Rookern Lamúrico",
+        "stats": {
+            "FlatSpellBlockMod": 80,
+            "FlatHPPoolMod": 400
+        }
+    },
+    {
+        "id": "2508",
+        "name": "Cinzas do Destino",
+        "stats": {
+            "FlatMagicDamageMod": 40
+        }
+    },
+    {
+        "id": "3001",
+        "name": "Proteção Imutável",
+        "stats": {
+            "FlatSpellBlockMod": 30,
+            "FlatHPPoolMod": 200,
+            "FlatArmorMod": 30
+        }
+    },
+    {
+        "id": "3002",
+        "name": "Desbravador",
+        "stats": {
+            "FlatHPPoolMod": 200,
+            "FlatArmorMod": 40,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "3003",
+        "name": "Cajado do Arcanjo",
+        "stats": {
+            "FlatMPPoolMod": 600,
+            "FlatMagicDamageMod": 80
+        }
+    },
+    {
+        "id": "3004",
+        "name": "Manamune",
+        "stats": {
+            "FlatMPPoolMod": 500,
+            "FlatPhysicalDamageMod": 35
+        }
+    },
+    {
+        "id": "3005",
+        "name": "Ghostcrawlers",
+        "stats": {
+            "FlatMovementSpeedMod": 45
+        }
+    },
+    {
+        "id": "3006",
+        "name": "Grevas do Berserker",
+        "stats": {
+            "FlatMovementSpeedMod": 45,
+            "PercentAttackSpeedMod": 0.35
+        }
+    },
+    {
+        "id": "3009",
+        "name": "Botas da Rapidez",
+        "stats": {
+            "FlatMovementSpeedMod": 60
+        }
+    },
+    {
+        "id": "3010",
+        "name": "Solas Simbióticas",
+        "stats": {
+            "FlatMovementSpeedMod": 35
+        }
+    },
+    {
+        "id": "3011",
+        "name": "Putrificador Quimtec",
+        "stats": {
+            "FlatMagicDamageMod": 35
+        }
+    },
+    {
+        "id": "3012",
+        "name": "Cálice da Bênção",
+        "stats": {
+            "FlatHPPoolMod": 200
+        }
+    },
+    {
+        "id": "3013",
+        "name": "Almas Sincronizadas",
+        "stats": {
+            "FlatMovementSpeedMod": 45
+        }
+    },
+    {
+        "id": "3020",
+        "name": "Sapatos do Feiticeiro",
+        "stats": {
+            "FlatMovementSpeedMod": 45
+        },
+        "effect": {
+            "Effect1Amount": "18"
+        }
+    },
+    {
+        "id": "3023",
+        "name": "Pingente da Vida Abundante",
+        "stats": {
+            "FlatHPPoolMod": 150,
+            "FlatArmorMod": 25
+        }
+    },
+    {
+        "id": "3024",
+        "name": "Broquel Glacial",
+        "stats": {
+            "FlatMPPoolMod": 250,
+            "FlatArmorMod": 20
+        }
+    },
+    {
+        "id": "3026",
+        "name": "Anjo Guardião",
+        "stats": {
+            "FlatArmorMod": 45,
+            "FlatPhysicalDamageMod": 55
+        },
+        "effect": {
+            "Effect1Amount": "0.5",
+            "Effect2Amount": "4",
+            "Effect3Amount": "300",
+            "Effect4Amount": "1"
+        }
+    },
+    {
+        "id": "3031",
+        "name": "Gume do Infinito",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 80
+        }
+    },
+    {
+        "id": "3032",
+        "name": "Flechatroz de Yun Tal",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 65
+        }
+    },
+    {
+        "id": "3033",
+        "name": "Lembrete Mortal",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 40
+        }
+    },
+    {
+        "id": "3035",
+        "name": "Último Sussurro",
+        "stats": {
+            "FlatPhysicalDamageMod": 20
+        }
+    },
+    {
+        "id": "3036",
+        "name": "Lembranças do Lorde Dominik",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 45
+        },
+        "effect": {
+            "Effect1Amount": "0.2"
+        }
+    },
+    {
+        "id": "3039",
+        "name": "Acerto de Contas de Atma",
+        "stats": {
+            "FlatSpellBlockMod": 30,
+            "FlatArmorMod": 30,
+            "FlatPhysicalDamageMod": 25
+        }
+    },
+    {
+        "id": "3040",
+        "name": "Abraço de Seraph",
+        "stats": {
+            "FlatMPPoolMod": 1000,
+            "FlatMagicDamageMod": 80
+        }
+    },
+    {
+        "id": "3041",
+        "name": "Ladrão de Almas de Mejai",
+        "stats": {
+            "FlatHPPoolMod": 100,
+            "FlatMagicDamageMod": 20
+        }
+    },
+    {
+        "id": "3042",
+        "name": "Muramana",
+        "stats": {
+            "FlatMPPoolMod": 860,
+            "FlatPhysicalDamageMod": 35
+        }
+    },
+    {
+        "id": "3044",
+        "name": "Fago",
+        "stats": {
+            "FlatHPPoolMod": 200,
+            "FlatPhysicalDamageMod": 15
+        },
+        "effect": {
+            "Effect1Amount": "20",
+            "Effect2Amount": "2",
+            "Effect3Amount": "60",
+            "Effect4Amount": "0",
+            "Effect5Amount": "0",
+            "Effect6Amount": "0",
+            "Effect7Amount": "0",
+            "Effect8Amount": "8"
+        }
+    },
+    {
+        "id": "3046",
+        "name": "Dançarina Fantasma",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "PercentAttackSpeedMod": 0.6,
+            "PercentMovementSpeedMod": 0.12
+        }
+    },
+    {
+        "id": "3047",
+        "name": "Botas Galvanizadas de Aço",
+        "stats": {
+            "FlatMovementSpeedMod": 45,
+            "FlatArmorMod": 25
+        },
+        "effect": {
+            "Effect1Amount": "0.08"
+        }
+    },
+    {
+        "id": "3050",
+        "name": "Convergência de Zeke",
+        "stats": {
+            "FlatSpellBlockMod": 25,
+            "FlatHPPoolMod": 300,
+            "FlatArmorMod": 25
+        }
+    },
+    {
+        "id": "3051",
+        "name": "Machado Termestre",
+        "stats": {
+            "FlatPhysicalDamageMod": 20,
+            "PercentAttackSpeedMod": 0.2
+        }
+    },
+    {
+        "id": "3053",
+        "name": "Sinal de Sterak",
+        "stats": {
+            "FlatHPPoolMod": 400
+        }
+    },
+    {
+        "id": "3057",
+        "name": "Fulgor",
+        "stats": null
+    },
+    {
+        "id": "3065",
+        "name": "Semblante Espiritual",
+        "stats": {
+            "FlatSpellBlockMod": 60,
+            "FlatHPPoolMod": 450
+        }
+    },
+    {
+        "id": "3066",
+        "name": "Couraça Lunar Alada",
+        "stats": {
+            "FlatHPPoolMod": 150,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "3067",
+        "name": "Gema Ardente",
+        "stats": {
+            "FlatHPPoolMod": 200
+        }
+    },
+    {
+        "id": "3068",
+        "name": "Égide de Fogo Solar",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatArmorMod": 50
+        }
+    },
+    {
+        "id": "3070",
+        "name": "Lágrima da Deusa",
+        "stats": {
+            "FlatMPPoolMod": 240
+        }
+    },
+    {
+        "id": "3071",
+        "name": "Cutelo Negro",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatPhysicalDamageMod": 55
+        },
+        "effect": {
+            "Effect1Amount": "0",
+            "Effect2Amount": "0.06",
+            "Effect3Amount": "6",
+            "Effect4Amount": "5",
+            "Effect5Amount": "0.3",
+            "Effect6Amount": "0",
+            "Effect7Amount": "0",
+            "Effect8Amount": "0",
+            "Effect9Amount": "0",
+            "Effect10Amount": "0.01"
+        }
+    },
+    {
+        "id": "3072",
+        "name": "Sedenta por Sangue",
+        "stats": {
+            "FlatPhysicalDamageMod": 80,
+            "PercentLifeStealMod": 0.18
+        }
+    },
+    {
+        "id": "3073",
+        "name": "Hexoplaca Experimental",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatPhysicalDamageMod": 55,
+            "PercentAttackSpeedMod": 0.25
+        }
+    },
+    {
+        "id": "3074",
+        "name": "Hidra Raivosa",
+        "stats": {
+            "FlatPhysicalDamageMod": 70,
+            "PercentLifeStealMod": 0.12
+        }
+    },
+    {
+        "id": "3075",
+        "name": "Armadura de Espinhos",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatArmorMod": 70
+        }
+    },
+    {
+        "id": "3076",
+        "name": "Colete Espinhoso",
+        "stats": {
+            "FlatArmorMod": 30
+        }
+    },
+    {
+        "id": "3077",
+        "name": "Tiamat",
+        "stats": {
+            "FlatPhysicalDamageMod": 20
+        }
+    },
+    {
+        "id": "3078",
+        "name": "Força da Trindade",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatPhysicalDamageMod": 45,
+            "PercentAttackSpeedMod": 0.33
+        },
+        "effect": {
+            "Effect1Amount": "25",
+            "Effect2Amount": "60",
+            "Effect3Amount": "2",
+            "Effect4Amount": "1.5",
+            "Effect5Amount": "1.5"
+        }
+    },
+    {
+        "id": "3082",
+        "name": "Carapaça do Vigia",
+        "stats": {
+            "FlatArmorMod": 40
+        }
+    },
+    {
+        "id": "3083",
+        "name": "Armadura de Warmog",
+        "stats": {
+            "FlatHPPoolMod": 1000,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "3084",
+        "name": "Coração de Aço",
+        "stats": {
+            "FlatHPPoolMod": 900
+        }
+    },
+    {
+        "id": "3085",
+        "name": "Furacão de Runaan",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "PercentAttackSpeedMod": 0.4,
+            "PercentMovementSpeedMod": 0.07
+        },
+        "effect": {
+            "Effect1Amount": "0",
+            "Effect2Amount": "40",
+            "Effect3Amount": "2",
+            "Effect4Amount": "0",
+            "Effect5Amount": "40",
+            "Effect6Amount": "1"
+        }
+    },
+    {
+        "id": "3086",
+        "name": "Zelo",
+        "stats": {
+            "FlatCritChanceMod": 0.2,
+            "PercentAttackSpeedMod": 0.15,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "3087",
+        "name": "Faca de Statikk",
+        "stats": {
+            "FlatPhysicalDamageMod": 50,
+            "PercentAttackSpeedMod": 0.4
+        }
+    },
+    {
+        "id": "3089",
+        "name": "Capuz da Morte de Rabadon",
+        "stats": {
+            "FlatMagicDamageMod": 140
+        }
+    },
+    {
+        "id": "3091",
+        "name": "Limite da Razão",
+        "stats": {
+            "FlatSpellBlockMod": 50,
+            "PercentAttackSpeedMod": 0.55
+        }
+    },
+    {
+        "id": "3094",
+        "name": "Canhão Fumegante",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "PercentAttackSpeedMod": 0.35,
+            "PercentMovementSpeedMod": 0.07
+        }
+    },
+    {
+        "id": "3095",
+        "name": "Chuva de Canivete",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 65
+        }
+    },
+    {
+        "id": "3100",
+        "name": "Perdição de Lich",
+        "stats": {
+            "FlatMagicDamageMod": 100,
+            "PercentMovementSpeedMod": 0.08
+        }
+    },
+    {
+        "id": "3102",
+        "name": "Véu da Banshee",
+        "stats": {
+            "FlatSpellBlockMod": 50,
+            "FlatMagicDamageMod": 120
+        },
+        "effect": {
+            "Effect1Amount": "30",
+            "Effect2Amount": "45",
+            "Effect3Amount": "10",
+            "Effect4Amount": "-0.1",
+            "Effect5Amount": "8",
+            "Effect6Amount": "2"
+        }
+    },
+    {
+        "id": "3105",
+        "name": "Égide da Legião",
+        "stats": {
+            "FlatSpellBlockMod": 30,
+            "FlatArmorMod": 30
+        }
+    },
+    {
+        "id": "3107",
+        "name": "Redenção",
+        "stats": {
+            "FlatHPPoolMod": 200
+        }
+    },
+    {
+        "id": "3108",
+        "name": "Códex Demoníaco",
+        "stats": {
+            "FlatMagicDamageMod": 25
+        },
+        "effect": {
+            "Effect1Amount": "-0.1"
+        }
+    },
+    {
+        "id": "3109",
+        "name": "Juramento do Cavaleiro",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatArmorMod": 40
+        }
+    },
+    {
+        "id": "3110",
+        "name": "Coração Congelado",
+        "stats": {
+            "FlatMPPoolMod": 400,
+            "FlatArmorMod": 65
+        }
+    },
+    {
+        "id": "3111",
+        "name": "Passos de Mercúrio",
+        "stats": {
+            "FlatSpellBlockMod": 25,
+            "FlatMovementSpeedMod": 45
+        }
+    },
+    {
+        "id": "3112",
+        "name": "Orbe do Guardião",
+        "stats": {
+            "FlatHPPoolMod": 150,
+            "FlatMagicDamageMod": 50
+        },
+        "effect": {
+            "Effect1Amount": "3"
+        }
+    },
+    {
+        "id": "3113",
+        "name": "Cintilação Etérea",
+        "stats": {
+            "FlatMagicDamageMod": 30,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "3114",
+        "name": "Ídolo Proibido",
+        "stats": null
+    },
+    {
+        "id": "3115",
+        "name": "Dente de Na'Shor",
+        "stats": {
+            "FlatMagicDamageMod": 90,
+            "PercentAttackSpeedMod": 0.5
+        }
+    },
+    {
+        "id": "3116",
+        "name": "Cetro de Cristal de Rylai",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatMagicDamageMod": 75
+        },
+        "effect": {
+            "Effect1Amount": "-0.3",
+            "Effect2Amount": "-0.3",
+            "Effect3Amount": "-0.3",
+            "Effect4Amount": "1",
+            "Effect5Amount": "1",
+            "Effect6Amount": "1"
+        }
+    },
+    {
+        "id": "3117",
+        "name": "Botas da Mobilidade",
+        "stats": {
+            "FlatMovementSpeedMod": 45
+        },
+        "effect": {
+            "Effect1Amount": "0",
+            "Effect2Amount": "0",
+            "Effect3Amount": "0",
+            "Effect4Amount": "0",
+            "Effect5Amount": "0",
+            "Effect6Amount": "0",
+            "Effect7Amount": "0",
+            "Effect8Amount": "25"
+        }
+    },
+    {
+        "id": "3118",
+        "name": "Malevolência",
+        "stats": {
+            "FlatMPPoolMod": 600,
+            "FlatMagicDamageMod": 80
+        }
+    },
+    {
+        "id": "3119",
+        "name": "Aproximação Invernal",
+        "stats": {
+            "FlatMPPoolMod": 500,
+            "FlatHPPoolMod": 550
+        }
+    },
+    {
+        "id": "3121",
+        "name": "Fimbulwinter",
+        "stats": {
+            "FlatMPPoolMod": 860,
+            "FlatHPPoolMod": 550
+        }
+    },
+    {
+        "id": "3123",
+        "name": "Chamado do Carrasco",
+        "stats": {
+            "FlatPhysicalDamageMod": 15
+        },
+        "effect": {
+            "Effect1Amount": "3"
+        }
+    },
+    {
+        "id": "3124",
+        "name": "Lâmina da Fúria de Guinsoo",
+        "stats": {
+            "FlatMagicDamageMod": 35,
+            "FlatPhysicalDamageMod": 35,
+            "PercentAttackSpeedMod": 0.25
+        },
+        "effect": {
+            "Effect1Amount": "0.08",
+            "Effect2Amount": "2.5",
+            "Effect3Amount": "2.5",
+            "Effect4Amount": "3",
+            "Effect5Amount": "4",
+            "Effect6Amount": "0.1",
+            "Effect7Amount": "0.1",
+            "Effect8Amount": "15",
+            "Effect9Amount": "1",
+            "Effect10Amount": "3",
+            "Effect11Amount": "0",
+            "Effect12Amount": "0",
+            "Effect13Amount": "3"
+        }
+    },
+    {
+        "id": "3128",
+        "name": "Sufocamento Ígneo",
+        "stats": {
+            "FlatMagicDamageMod": 120
+        }
+    },
+    {
+        "id": "3131",
+        "name": "Espada do Divino",
+        "stats": {
+            "FlatPhysicalDamageMod": 30,
+            "PercentAttackSpeedMod": 0.25
+        },
+        "effect": {
+            "Effect1Amount": "1",
+            "Effect2Amount": "3",
+            "Effect3Amount": "3",
+            "Effect4Amount": "1",
+            "Effect5Amount": "90"
+        }
+    },
+    {
+        "id": "3133",
+        "name": "Martelo de Guerra de Caulfield",
+        "stats": {
+            "FlatPhysicalDamageMod": 20
+        }
+    },
+    {
+        "id": "3134",
+        "name": "Punhal Serrilhado",
+        "stats": {
+            "FlatPhysicalDamageMod": 20
+        }
+    },
+    {
+        "id": "3135",
+        "name": "Cajado do Vazio",
+        "stats": {
+            "FlatMagicDamageMod": 80
+        }
+    },
+    {
+        "id": "3137",
+        "name": "Criptoflora",
+        "stats": {
+            "FlatMagicDamageMod": 70
+        }
+    },
+    {
+        "id": "3139",
+        "name": "Cimitarra Mercurial",
+        "stats": {
+            "FlatSpellBlockMod": 50,
+            "FlatPhysicalDamageMod": 40,
+            "PercentLifeStealMod": 0.1
+        },
+        "effect": {
+            "Effect1Amount": "0.5",
+            "Effect2Amount": "1.5",
+            "Effect3Amount": "90"
+        }
+    },
+    {
+        "id": "3140",
+        "name": "Bandana de Mercúrio",
+        "stats": {
+            "FlatSpellBlockMod": 30
+        }
+    },
+    {
+        "id": "3142",
+        "name": "Lâmina Fantasma de Youmuu",
+        "stats": {
+            "FlatPhysicalDamageMod": 60
+        },
+        "effect": {
+            "Effect1Amount": "45",
+            "Effect2Amount": "0",
+            "Effect3Amount": "0",
+            "Effect4Amount": "0",
+            "Effect5Amount": "6",
+            "Effect6Amount": "40"
+        }
+    },
+    {
+        "id": "3143",
+        "name": "Presságio de Randuin",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatArmorMod": 75
+        }
+    },
+    {
+        "id": "3144",
+        "name": "Estilingue do Patrulheiro",
+        "stats": {
+            "PercentAttackSpeedMod": 0.2
+        }
+    },
+    {
+        "id": "3145",
+        "name": "Alternador Hextec",
+        "stats": {
+            "FlatMagicDamageMod": 45
+        }
+    },
+    {
+        "id": "3146",
+        "name": "Pistola Laminar Hextec",
+        "stats": {
+            "FlatMagicDamageMod": 80,
+            "FlatPhysicalDamageMod": 40
+        }
+    },
+    {
+        "id": "3147",
+        "name": "Máscara Assustadora",
+        "stats": {
+            "FlatHPPoolMod": 200,
+            "FlatMagicDamageMod": 30
+        }
+    },
+    {
+        "id": "3152",
+        "name": "Explocinturão Hextec",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatMagicDamageMod": 70
+        }
+    },
+    {
+        "id": "3153",
+        "name": "Espada do Rei Destruído",
+        "stats": {
+            "FlatPhysicalDamageMod": 55,
+            "PercentAttackSpeedMod": 0.3,
+            "PercentLifeStealMod": 0.1
+        }
+    },
+    {
+        "id": "3155",
+        "name": "Hexdrinker",
+        "stats": {
+            "FlatSpellBlockMod": 30,
+            "FlatPhysicalDamageMod": 25
+        }
+    },
+    {
+        "id": "3156",
+        "name": "Mandíbula de Malmortius",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatPhysicalDamageMod": 70
+        }
+    },
+    {
+        "id": "3157",
+        "name": "Ampulheta de Zhonya",
+        "stats": {
+            "FlatMagicDamageMod": 120,
+            "FlatArmorMod": 50
+        },
+        "effect": {
+            "Effect1Amount": "0",
+            "Effect2Amount": "2.5",
+            "Effect3Amount": "120"
+        }
+    },
+    {
+        "id": "3158",
+        "name": "Botas Ionianas da Lucidez",
+        "stats": {
+            "FlatMovementSpeedMod": 45
+        }
+    },
+    {
+        "id": "3161",
+        "name": "Lança de Shojin",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatPhysicalDamageMod": 55
+        }
+    },
+    {
+        "id": "3165",
+        "name": "Morellonomicon",
+        "stats": {
+            "FlatMagicDamageMod": 90
+        }
+    },
+    {
+        "id": "3172",
+        "name": "Zéfiro",
+        "stats": {
+            "FlatMovementSpeedMod": 45,
+            "PercentAttackSpeedMod": 0.45
+        }
+    },
+    {
+        "id": "3177",
+        "name": "Lâmina do Guardião",
+        "stats": {
+            "FlatHPPoolMod": 150,
+            "FlatPhysicalDamageMod": 30
+        },
+        "effect": {
+            "Effect1Amount": "10"
+        }
+    },
+    {
+        "id": "3179",
+        "name": "Glaive Sombria",
+        "stats": {
+            "FlatPhysicalDamageMod": 50
+        },
+        "effect": {
+            "Effect1Amount": "10",
+            "Effect2Amount": "8",
+            "Effect3Amount": "50"
+        }
+    },
+    {
+        "id": "3181",
+        "name": "Quebracascos",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatPhysicalDamageMod": 65,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "3184",
+        "name": "Martelo do Guardião",
+        "stats": {
+            "FlatHPPoolMod": 150,
+            "FlatPhysicalDamageMod": 25,
+            "PercentLifeStealMod": 0.07
+        }
+    },
+    {
+        "id": "3190",
+        "name": "Medalhão dos Solari de Ferro",
+        "stats": {
+            "FlatSpellBlockMod": 30,
+            "FlatHPPoolMod": 200,
+            "FlatArmorMod": 30
+        }
+    },
+    {
+        "id": "3193",
+        "name": "Placa Gargolítica",
+        "stats": {
+            "FlatSpellBlockMod": 60,
+            "FlatArmorMod": 60
+        }
+    },
+    {
+        "id": "3211",
+        "name": "Capuz do Espectro",
+        "stats": {
+            "FlatSpellBlockMod": 25,
+            "FlatHPPoolMod": 200
+        }
+    },
+    {
+        "id": "3222",
+        "name": "Bênção de Mikael",
+        "stats": {
+            "FlatHPPoolMod": 250
+        }
+    },
+    {
+        "id": "3302",
+        "name": "Terminus",
+        "stats": {
+            "FlatPhysicalDamageMod": 35,
+            "PercentAttackSpeedMod": 0.35
+        }
+    },
+    {
+        "id": "3330",
+        "name": "Efígie do Espantalho",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "90",
+            "Effect2Amount": "240",
+            "Effect3Amount": "120",
+            "Effect4Amount": "120",
+            "Effect5Amount": "2",
+            "Effect6Amount": "9",
+            "Effect7Amount": "30",
+            "Effect8Amount": "120"
+        }
+    },
+    {
+        "id": "3340",
+        "name": "Sentinela Invisível",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "90",
+            "Effect2Amount": "210",
+            "Effect3Amount": "120",
+            "Effect4Amount": "120",
+            "Effect5Amount": "2",
+            "Effect6Amount": "9",
+            "Effect7Amount": "30",
+            "Effect8Amount": "120"
+        }
+    },
+    {
+        "id": "3348",
+        "name": "Analisador Arcano",
+        "stats": null
+    },
+    {
+        "id": "3349",
+        "name": "Singularidade Lucente",
+        "stats": null
+    },
+    {
+        "id": "3363",
+        "name": "Alteração Vidente",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "4000",
+            "Effect2Amount": "2",
+            "Effect3Amount": "5",
+            "Effect4Amount": "198",
+            "Effect5Amount": "60",
+            "Effect6Amount": "9",
+            "Effect7Amount": "30",
+            "Effect8Amount": "120",
+            "Effect9Amount": "6.5",
+            "Effect10Amount": "198",
+            "Effect11Amount": "99",
+            "Effect12Amount": "60",
+            "Effect13Amount": "180",
+            "Effect14Amount": "10",
+            "Effect15Amount": "45"
+        }
+    },
+    {
+        "id": "3364",
+        "name": "Lente do Oráculo",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "6",
+            "Effect2Amount": "10",
+            "Effect3Amount": "120",
+            "Effect4Amount": "60",
+            "Effect5Amount": "0",
+            "Effect6Amount": "1",
+            "Effect7Amount": "30",
+            "Effect8Amount": "120",
+            "Effect9Amount": "60"
+        }
+    },
+    {
+        "id": "3400",
+        "name": "Sua Parte",
+        "stats": null
+    },
+    {
+        "id": "3430",
+        "name": "Ritual da Ruína",
+        "stats": {
+            "FlatMagicDamageMod": 50,
+            "FlatCritChanceMod": 0.2
+        }
+    },
+    {
+        "id": "3504",
+        "name": "Turíbulo Ardente",
+        "stats": {
+            "FlatMagicDamageMod": 50,
+            "PercentMovementSpeedMod": 0.08
+        }
+    },
+    {
+        "id": "3508",
+        "name": "Colhedor de Essência",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 65
+        }
+    },
+    {
+        "id": "3513",
+        "name": "Olho do Arauto",
+        "stats": null,
+        "effect": {
+            "Effect1Amount": "240",
+            "Effect2Amount": "1",
+            "Effect3Amount": "20",
+            "Effect4Amount": "180"
+        }
+    },
+    {
+        "id": "3599",
+        "name": "Lança Negra da Kalista",
+        "stats": null
+    },
+    {
+        "id": "3600",
+        "name": "Lança Negra da Kalista",
+        "stats": null
+    },
+    {
+        "id": "3742",
+        "name": "Couraça do Defunto",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatArmorMod": 45,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "3748",
+        "name": "Hidra Titânica",
+        "stats": {
+            "FlatHPPoolMod": 550,
+            "FlatPhysicalDamageMod": 50
+        }
+    },
+    {
+        "id": "3801",
+        "name": "Braçadeira Cristalina",
+        "stats": {
+            "FlatHPPoolMod": 200
+        }
+    },
+    {
+        "id": "3802",
+        "name": "Capítulo Perdido",
+        "stats": {
+            "FlatMPPoolMod": 300,
+            "FlatMagicDamageMod": 40
+        }
+    },
+    {
+        "id": "3803",
+        "name": "Catalisador das Eras",
+        "stats": {
+            "FlatMPPoolMod": 300,
+            "FlatHPPoolMod": 350
+        }
+    },
+    {
+        "id": "3814",
+        "name": "Limiar da Noite",
+        "stats": {
+            "FlatHPPoolMod": 250,
+            "FlatPhysicalDamageMod": 50
+        },
+        "effect": {
+            "Effect1Amount": "0",
+            "Effect2Amount": "0",
+            "Effect3Amount": "0",
+            "Effect4Amount": "40"
+        }
+    },
+    {
+        "id": "3850",
+        "name": "Gume do Ladrão Arcano",
+        "stats": {
+            "FlatHPPoolMod": 25,
+            "FlatMagicDamageMod": 10
+        },
+        "effect": {
+            "Effect1Amount": "2",
+            "Effect2Amount": "20",
+            "Effect3Amount": "20",
+            "Effect4Amount": "500",
+            "Effect5Amount": "12",
+            "Effect6Amount": "3",
+            "Effect7Amount": "2000"
+        }
+    },
+    {
+        "id": "3851",
+        "name": "Presas Gélidas",
+        "stats": {
+            "FlatHPPoolMod": 70,
+            "FlatMagicDamageMod": 15
+        },
+        "effect": {
+            "Effect1Amount": "3",
+            "Effect2Amount": "20",
+            "Effect3Amount": "20",
+            "Effect4Amount": "1000",
+            "Effect5Amount": "12",
+            "Effect6Amount": "3",
+            "Effect7Amount": "2000"
+        }
+    },
+    {
+        "id": "3853",
+        "name": "Estilhaço de Gelo Verdadeiro",
+        "stats": {
+            "FlatHPPoolMod": 75,
+            "FlatMagicDamageMod": 40
+        },
+        "effect": {
+            "Effect1Amount": "3"
+        }
+    },
+    {
+        "id": "3854",
+        "name": "Guarda-ombros de Aço",
+        "stats": {
+            "FlatHPPoolMod": 50,
+            "FlatPhysicalDamageMod": 4
+        },
+        "effect": {
+            "Effect1Amount": "2",
+            "Effect2Amount": "0.5",
+            "Effect3Amount": "0.3",
+            "Effect4Amount": "500",
+            "Effect5Amount": "35",
+            "Effect6Amount": "3"
+        }
+    },
+    {
+        "id": "3855",
+        "name": "Espaldeiras de Aço Rúnico",
+        "stats": {
+            "FlatHPPoolMod": 100,
+            "FlatPhysicalDamageMod": 6
+        },
+        "effect": {
+            "Effect1Amount": "3",
+            "Effect2Amount": "0.5",
+            "Effect3Amount": "0.5",
+            "Effect4Amount": "1000",
+            "Effect5Amount": "35",
+            "Effect6Amount": "3"
+        }
+    },
+    {
+        "id": "3857",
+        "name": "Ombreiras de Pedralva",
+        "stats": {
+            "FlatHPPoolMod": 250,
+            "FlatPhysicalDamageMod": 15
+        },
+        "effect": {
+            "Effect1Amount": "3"
+        }
+    },
+    {
+        "id": "3858",
+        "name": "Escudo Relicário",
+        "stats": {
+            "FlatHPPoolMod": 50,
+            "FlatMagicDamageMod": 7
+        },
+        "effect": {
+            "Effect1Amount": "2",
+            "Effect2Amount": "0.5",
+            "Effect3Amount": "0.3",
+            "Effect4Amount": "500",
+            "Effect5Amount": "35",
+            "Effect6Amount": "3"
+        }
+    },
+    {
+        "id": "3859",
+        "name": "Broquel de Targon",
+        "stats": {
+            "FlatHPPoolMod": 100,
+            "FlatMagicDamageMod": 10
+        },
+        "effect": {
+            "Effect1Amount": "3",
+            "Effect2Amount": "0.5",
+            "Effect3Amount": "0.5",
+            "Effect4Amount": "1000",
+            "Effect5Amount": "35",
+            "Effect6Amount": "3"
+        }
+    },
+    {
+        "id": "3860",
+        "name": "Bastião da Montanha",
+        "stats": {
+            "FlatHPPoolMod": 250,
+            "FlatMagicDamageMod": 20
+        },
+        "effect": {
+            "Effect1Amount": "3"
+        }
+    },
+    {
+        "id": "3862",
+        "name": "Foice Espectral",
+        "stats": {
+            "FlatHPPoolMod": 25,
+            "FlatPhysicalDamageMod": 6
+        },
+        "effect": {
+            "Effect1Amount": "2",
+            "Effect2Amount": "20",
+            "Effect3Amount": "20",
+            "Effect4Amount": "500",
+            "Effect5Amount": "12",
+            "Effect6Amount": "3",
+            "Effect7Amount": "2000"
+        }
+    },
+    {
+        "id": "3863",
+        "name": "Tormento Crescente",
+        "stats": {
+            "FlatHPPoolMod": 60,
+            "FlatPhysicalDamageMod": 10
+        },
+        "effect": {
+            "Effect1Amount": "3",
+            "Effect2Amount": "20",
+            "Effect3Amount": "20",
+            "Effect4Amount": "1000",
+            "Effect5Amount": "12",
+            "Effect6Amount": "3",
+            "Effect7Amount": "2000"
+        }
+    },
+    {
+        "id": "3864",
+        "name": "Foice da Névoa Negra",
+        "stats": {
+            "FlatHPPoolMod": 75,
+            "FlatPhysicalDamageMod": 20
+        },
+        "effect": {
+            "Effect1Amount": "3"
+        }
+    },
+    {
+        "id": "3865",
+        "name": "Atlas Mundial",
+        "stats": {
+            "FlatHPPoolMod": 30
+        },
+        "effect": {
+            "Effect1Amount": "3"
+        }
+    },
+    {
+        "id": "3866",
+        "name": "Bússola Rúnica",
+        "stats": {
+            "FlatHPPoolMod": 100
+        },
+        "effect": {
+            "Effect1Amount": "5"
+        }
+    },
+    {
+        "id": "3867",
+        "name": "Dádiva dos Mundos",
+        "stats": {
+            "FlatHPPoolMod": 200
+        },
+        "effect": {
+            "Effect1Amount": "5"
+        }
+    },
+    {
+        "id": "3869",
+        "name": "Oposição Celestial",
+        "stats": {
+            "FlatHPPoolMod": 200
+        },
+        "effect": {
+            "Effect1Amount": "5"
+        }
+    },
+    {
+        "id": "3870",
+        "name": "Criassonhos",
+        "stats": {
+            "FlatHPPoolMod": 200
+        },
+        "effect": {
+            "Effect1Amount": "5"
+        }
+    },
+    {
+        "id": "3871",
+        "name": "Invadomínio de Zaz'Zak",
+        "stats": {
+            "FlatHPPoolMod": 200
+        },
+        "effect": {
+            "Effect1Amount": "5"
+        }
+    },
+    {
+        "id": "3876",
+        "name": "Trenó do Solstício",
+        "stats": {
+            "FlatHPPoolMod": 200
+        },
+        "effect": {
+            "Effect1Amount": "5"
+        }
+    },
+    {
+        "id": "3877",
+        "name": "Canção de Sangue",
+        "stats": {
+            "FlatHPPoolMod": 200
+        },
+        "effect": {
+            "Effect1Amount": "5"
+        }
+    },
+    {
+        "id": "3901",
+        "name": "<rarityLegendary>Disparar à Vontade</rarityLegendary><br><subtitleLeft><silver>500 Serpentes de Prata</silver></subtitleLeft>",
+        "stats": null
+    },
+    {
+        "id": "3902",
+        "name": "<rarityLegendary>Filha da Morte</rarityLegendary><br><subtitleLeft><silver>500 Serpentes de Prata</silver></subtitleLeft>",
+        "stats": null
+    },
+    {
+        "id": "3903",
+        "name": "<rarityLegendary>Levantar o Moral</rarityLegendary><br><subtitleLeft><silver>500 Serpentes de Prata</silver></subtitleLeft>",
+        "stats": null
+    },
+    {
+        "id": "3916",
+        "name": "Orbe do Oblívio",
+        "stats": {
+            "FlatMagicDamageMod": 30
+        }
+    },
+    {
+        "id": "4003",
+        "name": "Salva-Vidas",
+        "stats": {
+            "FlatPhysicalDamageMod": 20
+        }
+    },
+    {
+        "id": "4004",
+        "name": "Alfanje Espectral",
+        "stats": {
+            "FlatPhysicalDamageMod": 70
+        }
+    },
+    {
+        "id": "4005",
+        "name": "Mandato Imperial",
+        "stats": {
+            "FlatMagicDamageMod": 60
+        }
+    },
+    {
+        "id": "4010",
+        "name": "Maldição Sanguessuga",
+        "stats": {
+            "FlatSpellBlockMod": 30,
+            "FlatMagicDamageMod": 60,
+            "FlatArmorMod": 30
+        }
+    },
+    {
+        "id": "4011",
+        "name": "Espada da Aurora Florescente",
+        "stats": {
+            "FlatHPPoolMod": 200,
+            "FlatMagicDamageMod": 30
+        }
+    },
+    {
+        "id": "4012",
+        "name": "Devorador de Pecados",
+        "stats": {
+            "FlatSpellBlockMod": 45,
+            "FlatHPPoolMod": 300,
+            "FlatArmorMod": 45
+        }
+    },
+    {
+        "id": "4013",
+        "name": "Corrente Eletrizante",
+        "stats": {
+            "FlatSpellBlockMod": 30,
+            "FlatMagicDamageMod": 70,
+            "FlatArmorMod": 30
+        }
+    },
+    {
+        "id": "4014",
+        "name": "Malho Congelado",
+        "stats": {
+            "FlatHPPoolMod": 600,
+            "PercentAttackSpeedMod": 0.6
+        }
+    },
+    {
+        "id": "4015",
+        "name": "Perplexidade",
+        "stats": {
+            "FlatMagicDamageMod": 60,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "4016",
+        "name": "Promessa Silenciosa",
+        "stats": {
+            "FlatMagicDamageMod": 50
+        }
+    },
+    {
+        "id": "4017",
+        "name": "Machadinha Infernal",
+        "stats": {
+            "FlatPhysicalDamageMod": 35
+        }
+    },
+    {
+        "id": "4401",
+        "name": "Força da Natureza",
+        "stats": {
+            "FlatSpellBlockMod": 55,
+            "FlatHPPoolMod": 400,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "4402",
+        "name": "Medalhão Enervante",
+        "stats": {
+            "FlatMPPoolMod": 300,
+            "FlatHPPoolMod": 400,
+            "FlatPhysicalDamageMod": 30
+        },
+        "effect": {
+            "Effect1Amount": "3",
+            "Effect2Amount": "0.03",
+            "Effect3Amount": "0.03"
+        }
+    },
+    {
+        "id": "4403",
+        "name": "A Espátula Dourada",
+        "stats": {
+            "FlatSpellBlockMod": 30,
+            "FlatMPPoolMod": 250,
+            "FlatHPPoolMod": 250,
+            "FlatMagicDamageMod": 120,
+            "FlatArmorMod": 30,
+            "FlatCritChanceMod": 0.3,
+            "FlatPhysicalDamageMod": 70,
+            "PercentAttackSpeedMod": 0.5,
+            "PercentLifeStealMod": 0.1,
+            "PercentMovementSpeedMod": 0.1
+        }
+    },
+    {
+        "id": "443054",
+        "name": "Garras de Aço Sombrio",
+        "stats": {
+            "FlatArmorMod": 65,
+            "PercentAttackSpeedMod": 0.6,
+            "PercentMovementSpeedMod": 0.1
+        }
+    },
+    {
+        "id": "443055",
+        "name": "Fulminação",
+        "stats": {
+            "FlatPhysicalDamageMod": 55,
+            "PercentAttackSpeedMod": 0.45,
+            "PercentMovementSpeedMod": 0.15
+        }
+    },
+    {
+        "id": "443056",
+        "name": "Coroa do Rei Demoníaco",
+        "stats": null
+    },
+    {
+        "id": "443058",
+        "name": "Escudo de Rocha Fundida",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatArmorMod": 100
+        }
+    },
+    {
+        "id": "443059",
+        "name": "Manto da Noite Estrelada",
+        "stats": {
+            "FlatSpellBlockMod": 100,
+            "FlatHPPoolMod": 300
+        }
+    },
+    {
+        "id": "443060",
+        "name": "Espada do Divino",
+        "stats": {
+            "FlatCritChanceMod": 0.4
+        }
+    },
+    {
+        "id": "443061",
+        "name": "Força da Entropia",
+        "stats": {
+            "FlatHPPoolMod": 900,
+            "FlatCritChanceMod": 0.3
+        }
+    },
+    {
+        "id": "443062",
+        "name": "Presente Sanguinário",
+        "stats": {
+            "FlatMagicDamageMod": 80
+        }
+    },
+    {
+        "id": "443063",
+        "name": "Milagre de Eleisa",
+        "stats": {
+            "FlatSpellBlockMod": 70,
+            "FlatArmorMod": 70
+        }
+    },
+    {
+        "id": "443064",
+        "name": "Talismã da Ascensão",
+        "stats": null
+    },
+    {
+        "id": "443069",
+        "name": "Debilitador",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 50,
+            "PercentAttackSpeedMod": 0.4
+        }
+    },
+    {
+        "id": "443079",
+        "name": "Quimiotanque Turbo",
+        "stats": {
+            "FlatHPPoolMod": 1100,
+            "PercentMovementSpeedMod": 0.15
+        }
+    },
+    {
+        "id": "443193",
+        "name": "Placa Gargolítica",
+        "stats": {
+            "FlatSpellBlockMod": 90,
+            "FlatArmorMod": 90,
+            "PercentMovementSpeedMod": 0.1
+        }
+    },
+    {
+        "id": "444636",
+        "name": "Colhedor Noturno",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatMagicDamageMod": 90
+        }
+    },
+    {
+        "id": "444637",
+        "name": "Abraço Demoníaco",
+        "stats": {
+            "FlatHPPoolMod": 600,
+            "FlatMagicDamageMod": 70
+        }
+    },
+    {
+        "id": "444644",
+        "name": "Coroa da Rainha Despedaçada",
+        "stats": {
+            "FlatMPPoolMod": 600,
+            "FlatHPPoolMod": 300,
+            "FlatMagicDamageMod": 85
+        }
+    },
+    {
+        "id": "446632",
+        "name": "Ruptor Divino",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatPhysicalDamageMod": 55
+        }
+    },
+    {
+        "id": "446656",
+        "name": "Glacieterno",
+        "stats": {
+            "FlatMPPoolMod": 600,
+            "FlatHPPoolMod": 500,
+            "FlatMagicDamageMod": 100
+        }
+    },
+    {
+        "id": "446667",
+        "name": "Virtude Radiante",
+        "stats": {
+            "FlatSpellBlockMod": 35,
+            "FlatHPPoolMod": 400,
+            "FlatArmorMod": 35
+        }
+    },
+    {
+        "id": "446671",
+        "name": "Força do Vendaval",
+        "stats": {
+            "FlatCritChanceMod": 0.2,
+            "FlatPhysicalDamageMod": 60,
+            "PercentAttackSpeedMod": 0.3,
+            "PercentMovementSpeedMod": 0.12
+        }
+    },
+    {
+        "id": "446691",
+        "name": "Crepúsculo de Draktharr",
+        "stats": {
+            "FlatPhysicalDamageMod": 60
+        }
+    },
+    {
+        "id": "446693",
+        "name": "Garra do Espreitador",
+        "stats": {
+            "FlatPhysicalDamageMod": 70
+        }
+    },
+    {
+        "id": "447100",
+        "name": "Espada da Miragem",
+        "stats": {
+            "PercentAttackSpeedMod": 0.6,
+            "PercentMovementSpeedMod": 0.1
+        }
+    },
+    {
+        "id": "447101",
+        "name": "Lâmina do Apostador",
+        "stats": {
+            "PercentAttackSpeedMod": 0.6,
+            "PercentMovementSpeedMod": 0.08
+        }
+    },
+    {
+        "id": "447102",
+        "name": "Fenda Dimensional",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatMagicDamageMod": 80,
+            "PercentAttackSpeedMod": 0.4
+        }
+    },
+    {
+        "id": "447103",
+        "name": "Elmo do Hemomante",
+        "stats": {
+            "FlatPhysicalDamageMod": 60
+        }
+    },
+    {
+        "id": "447104",
+        "name": "Medalhão Enervante",
+        "stats": {
+            "FlatHPPoolMod": 200,
+            "FlatMagicDamageMod": 70
+        }
+    },
+    {
+        "id": "447105",
+        "name": "Promessa Empírea",
+        "stats": {
+            "FlatMagicDamageMod": 60
+        }
+    },
+    {
+        "id": "447106",
+        "name": "Coração Dracônico",
+        "stats": null
+    },
+    {
+        "id": "447107",
+        "name": "Decapitador",
+        "stats": {
+            "PercentAttackSpeedMod": 0.5,
+            "PercentMovementSpeedMod": 0.12
+        }
+    },
+    {
+        "id": "447108",
+        "name": "Criarrunas",
+        "stats": {
+            "FlatMagicDamageMod": 80,
+            "PercentMovementSpeedMod": 0.08
+        }
+    },
+    {
+        "id": "447109",
+        "name": "Crueldade",
+        "stats": {
+            "FlatSpellBlockMod": 30,
+            "FlatMagicDamageMod": 80,
+            "FlatArmorMod": 30
+        }
+    },
+    {
+        "id": "447110",
+        "name": "Lâmina Enfeitiçada Moonflair",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatMagicDamageMod": 70
+        }
+    },
+    {
+        "id": "447111",
+        "name": "Armadura Sangrenta do Suserano",
+        "stats": {
+            "FlatHPPoolMod": 500,
+            "FlatPhysicalDamageMod": 45
+        }
+    },
+    {
+        "id": "447112",
+        "name": "Comecarne",
+        "stats": null
+    },
+    {
+        "id": "447113",
+        "name": "Orbe de Detonação",
+        "stats": {
+            "FlatMPPoolMod": 400,
+            "FlatMagicDamageMod": 90
+        }
+    },
+    {
+        "id": "4628",
+        "name": "Foco do Horizonte",
+        "stats": {
+            "FlatMagicDamageMod": 90
+        }
+    },
+    {
+        "id": "4629",
+        "name": "Ímpeto Cósmico",
+        "stats": {
+            "FlatHPPoolMod": 250,
+            "FlatMagicDamageMod": 80,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "4630",
+        "name": "Joia da Ruína",
+        "stats": {
+            "FlatMagicDamageMod": 25
+        }
+    },
+    {
+        "id": "4632",
+        "name": "Barreira Verdejante",
+        "stats": {
+            "FlatSpellBlockMod": 30,
+            "FlatMagicDamageMod": 40
+        }
+    },
+    {
+        "id": "4633",
+        "name": "Criafendas",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatMagicDamageMod": 80
+        }
+    },
+    {
+        "id": "4635",
+        "name": "Olhar Sanguessuga",
+        "stats": {
+            "FlatHPPoolMod": 250,
+            "FlatMagicDamageMod": 20
+        }
+    },
+    {
+        "id": "4636",
+        "name": "Colhedor Noturno",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatMagicDamageMod": 90
+        }
+    },
+    {
+        "id": "4637",
+        "name": "Abraço Demoníaco",
+        "stats": {
+            "FlatHPPoolMod": 350,
+            "FlatMagicDamageMod": 75
+        }
+    },
+    {
+        "id": "4638",
+        "name": "Pedra-vigia Observadora",
+        "stats": {
+            "FlatSpellBlockMod": 15,
+            "FlatHPPoolMod": 150,
+            "FlatArmorMod": 10
+        }
+    },
+    {
+        "id": "4641",
+        "name": "Pedra-vigia Inspiradora",
+        "stats": {
+            "FlatHPPoolMod": 80
+        }
+    },
+    {
+        "id": "4642",
+        "name": "Espelho de Bandópolis",
+        "stats": {
+            "FlatMagicDamageMod": 20
+        }
+    },
+    {
+        "id": "4643",
+        "name": "Pedra-vigia Vigilante",
+        "stats": {
+            "FlatSpellBlockMod": 30,
+            "FlatHPPoolMod": 250,
+            "FlatArmorMod": 25
+        }
+    },
+    {
+        "id": "4644",
+        "name": "Coroa da Rainha Despedaçada",
+        "stats": {
+            "FlatMPPoolMod": 600,
+            "FlatHPPoolMod": 250,
+            "FlatMagicDamageMod": 85
+        }
+    },
+    {
+        "id": "4645",
+        "name": "Chama Sombria",
+        "stats": {
+            "FlatMagicDamageMod": 120
+        }
+    },
+    {
+        "id": "4646",
+        "name": "Ápice da Tempestade",
+        "stats": {
+            "FlatMagicDamageMod": 95,
+            "PercentMovementSpeedMod": 0.08
+        }
+    },
+    {
+        "id": "6029",
+        "name": "Chicote Ferrifarpo",
+        "stats": {
+            "FlatPhysicalDamageMod": 30
+        }
+    },
+    {
+        "id": "6035",
+        "name": "Alvorada de Pratânia",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatHPPoolMod": 300,
+            "FlatPhysicalDamageMod": 40
+        },
+        "effect": {
+            "Effect1Amount": "0.5",
+            "Effect2Amount": "1",
+            "Effect3Amount": "90"
+        }
+    },
+    {
+        "id": "6333",
+        "name": "Dança da Morte",
+        "stats": {
+            "FlatArmorMod": 40,
+            "FlatPhysicalDamageMod": 60
+        }
+    },
+    {
+        "id": "6609",
+        "name": "Serrespada Quimiopunk",
+        "stats": {
+            "FlatHPPoolMod": 250,
+            "FlatPhysicalDamageMod": 55
+        }
+    },
+    {
+        "id": "6610",
+        "name": "Céu Dividido",
+        "stats": {
+            "FlatHPPoolMod": 450,
+            "FlatPhysicalDamageMod": 45
+        }
+    },
+    {
+        "id": "6616",
+        "name": "Cajado Aquafluxo",
+        "stats": {
+            "FlatMagicDamageMod": 40
+        }
+    },
+    {
+        "id": "6617",
+        "name": "Regenerador de Pedra Lunar",
+        "stats": {
+            "FlatHPPoolMod": 250,
+            "FlatMagicDamageMod": 30
+        }
+    },
+    {
+        "id": "6620",
+        "name": "Ecos de Helia",
+        "stats": {
+            "FlatHPPoolMod": 200,
+            "FlatMagicDamageMod": 40
+        }
+    },
+    {
+        "id": "6621",
+        "name": "Auronúcleo",
+        "stats": {
+            "FlatMagicDamageMod": 60
+        }
+    },
+    {
+        "id": "6630",
+        "name": "Hemodrenário",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatPhysicalDamageMod": 55
+        }
+    },
+    {
+        "id": "6631",
+        "name": "Quebrapassos",
+        "stats": {
+            "FlatHPPoolMod": 450,
+            "FlatPhysicalDamageMod": 50,
+            "PercentAttackSpeedMod": 0.3
+        }
+    },
+    {
+        "id": "6632",
+        "name": "Ruptor Divino",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatPhysicalDamageMod": 40
+        }
+    },
+    {
+        "id": "6653",
+        "name": "Tormento de Liandry",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatMagicDamageMod": 90
+        }
+    },
+    {
+        "id": "6655",
+        "name": "Companheiro de Luden",
+        "stats": {
+            "FlatMPPoolMod": 600,
+            "FlatMagicDamageMod": 95
+        }
+    },
+    {
+        "id": "6656",
+        "name": "Glacieterno",
+        "stats": {
+            "FlatMPPoolMod": 600,
+            "FlatHPPoolMod": 250,
+            "FlatMagicDamageMod": 70
+        }
+    },
+    {
+        "id": "6657",
+        "name": "Bastão das Eras",
+        "stats": {
+            "FlatMPPoolMod": 400,
+            "FlatHPPoolMod": 400,
+            "FlatMagicDamageMod": 50
+        }
+    },
+    {
+        "id": "6660",
+        "name": "Brasa de Bami",
+        "stats": {
+            "FlatHPPoolMod": 200
+        }
+    },
+    {
+        "id": "6662",
+        "name": "Manopla dos Glacinatas",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatArmorMod": 50
+        }
+    },
+    {
+        "id": "6664",
+        "name": "Resplendor Vazio",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatHPPoolMod": 450
+        }
+    },
+    {
+        "id": "6665",
+        "name": "Jak'Sho, o Inconstante",
+        "stats": {
+            "FlatSpellBlockMod": 50,
+            "FlatHPPoolMod": 300,
+            "FlatArmorMod": 50
+        }
+    },
+    {
+        "id": "6667",
+        "name": "Virtude Radiante",
+        "stats": {
+            "FlatSpellBlockMod": 30,
+            "FlatHPPoolMod": 350,
+            "FlatArmorMod": 30
+        }
+    },
+    {
+        "id": "6670",
+        "name": "Aljava Vespertina",
+        "stats": {
+            "FlatCritChanceMod": 0.2,
+            "FlatPhysicalDamageMod": 25
+        }
+    },
+    {
+        "id": "6671",
+        "name": "Força do Vendaval",
+        "stats": {
+            "FlatCritChanceMod": 0.2,
+            "FlatPhysicalDamageMod": 50,
+            "PercentAttackSpeedMod": 0.15,
+            "PercentMovementSpeedMod": 0.07
+        }
+    },
+    {
+        "id": "6672",
+        "name": "Mata-Cráquens",
+        "stats": {
+            "FlatPhysicalDamageMod": 50,
+            "PercentAttackSpeedMod": 0.4,
+            "PercentMovementSpeedMod": 0.07
+        }
+    },
+    {
+        "id": "6673",
+        "name": "Arco-escudo Imortal",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 55
+        }
+    },
+    {
+        "id": "6675",
+        "name": "Adaga Oscilante Navori",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "PercentAttackSpeedMod": 0.4,
+            "PercentMovementSpeedMod": 0.07
+        },
+        "effect": {
+            "Effect1Amount": "0.5",
+            "Effect2Amount": "1",
+            "Effect3Amount": "90"
+        }
+    },
+    {
+        "id": "6676",
+        "name": "A Coletora",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 60
+        }
+    },
+    {
+        "id": "6677",
+        "name": "Faca da Fúria",
+        "stats": {
+            "PercentAttackSpeedMod": 0.25
+        }
+    },
+    {
+        "id": "6690",
+        "name": "Retriz",
+        "stats": {
+            "FlatPhysicalDamageMod": 20,
+            "PercentMovementSpeedMod": 0.04
+        }
+    },
+    {
+        "id": "6691",
+        "name": "Crepúsculo de Draktharr",
+        "stats": {
+            "FlatPhysicalDamageMod": 60
+        }
+    },
+    {
+        "id": "6692",
+        "name": "Eclipse",
+        "stats": {
+            "FlatPhysicalDamageMod": 70
+        }
+    },
+    {
+        "id": "6693",
+        "name": "Garra do Espreitador",
+        "stats": {
+            "FlatPhysicalDamageMod": 55
+        }
+    },
+    {
+        "id": "6694",
+        "name": "Rancor de Serylda",
+        "stats": {
+            "FlatPhysicalDamageMod": 45
+        }
+    },
+    {
+        "id": "6695",
+        "name": "Presa da Serpente",
+        "stats": {
+            "FlatPhysicalDamageMod": 55
+        }
+    },
+    {
+        "id": "6696",
+        "name": "Arco do Axioma",
+        "stats": {
+            "FlatPhysicalDamageMod": 55
+        }
+    },
+    {
+        "id": "6697",
+        "name": "Húbris",
+        "stats": {
+            "FlatPhysicalDamageMod": 60
+        }
+    },
+    {
+        "id": "6698",
+        "name": "Hidra Profana",
+        "stats": {
+            "FlatPhysicalDamageMod": 60
+        }
+    },
+    {
+        "id": "6699",
+        "name": "Cicloespada Voltaica",
+        "stats": {
+            "FlatPhysicalDamageMod": 55
+        }
+    },
+    {
+        "id": "6700",
+        "name": "Escudo dos Rakkor",
+        "stats": {
+            "FlatArmorMod": 30,
+            "FlatPhysicalDamageMod": 50,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "6701",
+        "name": "Oportunidade",
+        "stats": {
+            "FlatPhysicalDamageMod": 55,
+            "PercentMovementSpeedMod": 0.05
+        }
+    },
+    {
+        "id": "7000",
+        "name": "Garra da Ave de Areia",
+        "stats": {
+            "FlatPhysicalDamageMod": 75
+        }
+    },
+    {
+        "id": "7001",
+        "name": "Sizígia",
+        "stats": {
+            "FlatPhysicalDamageMod": 90
+        }
+    },
+    {
+        "id": "7002",
+        "name": "Escultor Sombrio de Draktharr",
+        "stats": {
+            "FlatPhysicalDamageMod": 75
+        }
+    },
+    {
+        "id": "7003",
+        "name": "Coroa da Morte de Rabadon",
+        "stats": {
+            "FlatMagicDamageMod": 190
+        }
+    },
+    {
+        "id": "7004",
+        "name": "Inimizade das Massas",
+        "stats": {
+            "FlatMPPoolMod": 800,
+            "FlatMagicDamageMod": 110
+        }
+    },
+    {
+        "id": "7005",
+        "name": "Punho Congelado",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatArmorMod": 60
+        }
+    },
+    {
+        "id": "7006",
+        "name": "Tufão",
+        "stats": {
+            "FlatCritChanceMod": 0.2,
+            "FlatPhysicalDamageMod": 65,
+            "PercentAttackSpeedMod": 0.3,
+            "PercentMovementSpeedMod": 0.1
+        }
+    },
+    {
+        "id": "7007",
+        "name": "Furacão de Lâminas",
+        "stats": {
+            "FlatPhysicalDamageMod": 70
+        }
+    },
+    {
+        "id": "7008",
+        "name": "Ataraxia",
+        "stats": {
+            "FlatPhysicalDamageMod": 75
+        }
+    },
+    {
+        "id": "7009",
+        "name": "Maldição de Icathia",
+        "stats": {
+            "FlatHPPoolMod": 450,
+            "FlatMagicDamageMod": 90
+        }
+    },
+    {
+        "id": "7010",
+        "name": "Vesperal",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatMagicDamageMod": 120
+        }
+    },
+    {
+        "id": "7011",
+        "name": "Aeropropulsor Aprimorado",
+        "stats": {
+            "FlatHPPoolMod": 450,
+            "FlatMagicDamageMod": 95
+        }
+    },
+    {
+        "id": "7012",
+        "name": "Lamento de Liandry",
+        "stats": {
+            "FlatHPPoolMod": 550,
+            "FlatMagicDamageMod": 110
+        }
+    },
+    {
+        "id": "7013",
+        "name": "Potência Bélica",
+        "stats": {
+            "FlatMPPoolMod": 950,
+            "FlatMagicDamageMod": 120
+        }
+    },
+    {
+        "id": "7014",
+        "name": "Inverno Eterno",
+        "stats": {
+            "FlatMPPoolMod": 800,
+            "FlatHPPoolMod": 350,
+            "FlatMagicDamageMod": 90
+        }
+    },
+    {
+        "id": "7015",
+        "name": "Fome Incessante",
+        "stats": {
+            "FlatHPPoolMod": 550,
+            "FlatPhysicalDamageMod": 70
+        }
+    },
+    {
+        "id": "7016",
+        "name": "Assolador de Sonhos",
+        "stats": {
+            "FlatHPPoolMod": 600,
+            "FlatPhysicalDamageMod": 60,
+            "PercentAttackSpeedMod": 0.4
+        }
+    },
+    {
+        "id": "7017",
+        "name": "Deicídio",
+        "stats": {
+            "FlatHPPoolMod": 450,
+            "FlatPhysicalDamageMod": 60
+        }
+    },
+    {
+        "id": "7018",
+        "name": "Força do Infinito",
+        "stats": {
+            "FlatHPPoolMod": 400,
+            "FlatPhysicalDamageMod": 55,
+            "PercentAttackSpeedMod": 0.43
+        },
+        "effect": {
+            "Effect1Amount": "25",
+            "Effect2Amount": "60",
+            "Effect3Amount": "2",
+            "Effect4Amount": "1.5",
+            "Effect5Amount": "1.5"
+        }
+    },
+    {
+        "id": "7019",
+        "name": "Relicário do Alvorecer Dourado",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatHPPoolMod": 350,
+            "FlatArmorMod": 40
+        }
+    },
+    {
+        "id": "7020",
+        "name": "Réquiem de Shurelya",
+        "stats": {
+            "FlatMagicDamageMod": 65,
+            "PercentMovementSpeedMod": 0.07
+        }
+    },
+    {
+        "id": "7021",
+        "name": "Conjurador Estelar",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatMagicDamageMod": 50
+        }
+    },
+    {
+        "id": "7022",
+        "name": "Garantia",
+        "stats": {
+            "FlatPhysicalDamageMod": 70,
+            "PercentMovementSpeedMod": 0.08
+        }
+    },
+    {
+        "id": "7023",
+        "name": "Equinócio",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatHPPoolMod": 400,
+            "FlatArmorMod": 40
+        }
+    },
+    {
+        "id": "7024",
+        "name": "Cesura",
+        "stats": {
+            "FlatMPPoolMod": 800,
+            "FlatHPPoolMod": 350,
+            "FlatMagicDamageMod": 105
+        }
+    },
+    {
+        "id": "7025",
+        "name": "Leviatã",
+        "stats": {
+            "FlatHPPoolMod": 1150
+        }
+    },
+    {
+        "id": "7026",
+        "name": "O Parasita Silencioso",
+        "stats": {
+            "FlatSpellBlockMod": 60,
+            "FlatHPPoolMod": 550,
+            "FlatArmorMod": 60
+        }
+    },
+    {
+        "id": "7027",
+        "name": "Amanhecer Primordial",
+        "stats": {
+            "FlatSpellBlockMod": 40,
+            "FlatHPPoolMod": 500,
+            "FlatArmorMod": 40
+        }
+    },
+    {
+        "id": "7028",
+        "name": "Convergência Infinita",
+        "stats": {
+            "FlatMPPoolMod": 650,
+            "FlatHPPoolMod": 550,
+            "FlatMagicDamageMod": 70
+        }
+    },
+    {
+        "id": "7029",
+        "name": "Velório de Youmuu",
+        "stats": {
+            "FlatPhysicalDamageMod": 75
+        },
+        "effect": {
+            "Effect1Amount": "45",
+            "Effect2Amount": "0",
+            "Effect3Amount": "0",
+            "Effect4Amount": "0",
+            "Effect5Amount": "6",
+            "Effect6Amount": "40"
+        }
+    },
+    {
+        "id": "7030",
+        "name": "Sofrimento Fervente",
+        "stats": {
+            "FlatMagicDamageMod": 55,
+            "FlatPhysicalDamageMod": 45,
+            "PercentAttackSpeedMod": 0.35
+        },
+        "effect": {
+            "Effect1Amount": "0.08",
+            "Effect2Amount": "2.5",
+            "Effect3Amount": "2.5",
+            "Effect4Amount": "3",
+            "Effect5Amount": "4",
+            "Effect6Amount": "0.1",
+            "Effect7Amount": "0.1",
+            "Effect8Amount": "15",
+            "Effect9Amount": "1",
+            "Effect10Amount": "3",
+            "Effect11Amount": "0",
+            "Effect12Amount": "0",
+            "Effect13Amount": "3"
+        }
+    },
+    {
+        "id": "7031",
+        "name": "Gume da Finalidade",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 95
+        }
+    },
+    {
+        "id": "7032",
+        "name": "Cintilação",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 85,
+            "PercentAttackSpeedMod": 0.4,
+            "PercentMovementSpeedMod": 0.07
+        },
+        "effect": {
+            "Effect1Amount": "0.5",
+            "Effect2Amount": "1",
+            "Effect3Amount": "90"
+        }
+    },
+    {
+        "id": "7033",
+        "name": "Choro da Cidade Estridente",
+        "stats": {
+            "FlatHPPoolMod": 300,
+            "FlatMagicDamageMod": 60
+        }
+    },
+    {
+        "id": "7034",
+        "name": "Esperança à Deriva",
+        "stats": {
+            "FlatHPPoolMod": 600,
+            "FlatArmorMod": 65
+        }
+    },
+    {
+        "id": "7035",
+        "name": "Amanhecer",
+        "stats": {
+            "FlatMagicDamageMod": 70
+        }
+    },
+    {
+        "id": "7036",
+        "name": "T.U.R.B.O.",
+        "stats": {
+            "FlatHPPoolMod": 450,
+            "FlatPhysicalDamageMod": 65,
+            "PercentAttackSpeedMod": 0.3
+        }
+    },
+    {
+        "id": "7037",
+        "name": "Cutelo Obsidiano",
+        "stats": {
+            "FlatHPPoolMod": 600,
+            "FlatPhysicalDamageMod": 65
+        },
+        "effect": {
+            "Effect1Amount": "0",
+            "Effect2Amount": "0.06",
+            "Effect3Amount": "6",
+            "Effect4Amount": "5",
+            "Effect5Amount": "0.3",
+            "Effect6Amount": "0",
+            "Effect7Amount": "0",
+            "Effect8Amount": "0",
+            "Effect9Amount": "0",
+            "Effect10Amount": "0.01"
+        }
+    },
+    {
+        "id": "7038",
+        "name": "Determinação de Shojin",
+        "stats": {
+            "FlatHPPoolMod": 500,
+            "FlatPhysicalDamageMod": 65
+        }
+    },
+    {
+        "id": "7039",
+        "name": "Queda Celestial",
+        "stats": {
+            "FlatHPPoolMod": 600,
+            "FlatPhysicalDamageMod": 60
+        }
+    },
+    {
+        "id": "7040",
+        "name": "Olho da Tempestade",
+        "stats": {
+            "FlatCritChanceMod": 0.25,
+            "FlatPhysicalDamageMod": 80,
+            "PercentAttackSpeedMod": 0.25
+        }
+    },
+    {
+        "id": "7041",
+        "name": "Sacrifício da Serpente",
+        "stats": {
+            "FlatPhysicalDamageMod": 60,
+            "PercentAttackSpeedMod": 0.55,
+            "PercentMovementSpeedMod": 0.07
+        }
+    },
+    {
+        "id": "7042",
+        "name": "Presente do Barão",
+        "stats": {
+            "FlatMagicDamageMod": 120,
+            "PercentAttackSpeedMod": 0.6
+        }
+    },
+    {
+        "id": "7050",
+        "name": "Gangplank Placeholder",
+        "stats": null
+    },
+    {
+        "id": "8001",
+        "name": "Correntes de Anátema",
+        "stats": {
+            "FlatHPPoolMod": 650
+        }
+    },
+    {
+        "id": "8020",
+        "name": "Máscara Abissal",
+        "stats": {
+            "FlatSpellBlockMod": 50,
+            "FlatHPPoolMod": 300
+        }
+    }
+]

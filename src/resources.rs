@@ -2,6 +2,14 @@ use candle_core::Tensor;
 use std::collections::HashMap;
 use serde::{Serialize, Deserialize};
 
+#[derive(Serialize, Deserialize, Debug)]
+#[serde(untagged)]
+pub enum Number {
+    Integer(i32),
+    Float(f32),
+    Null
+}
+
 pub enum EffectMod {
     Add,
     Times
@@ -16,9 +24,11 @@ pub struct Item {
     pub effect: Effect
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug)]
 pub struct BaseItem {
-    stats: HashMap<String, i32>
+    pub id: String,
+    pub name: String,
+    pub stats: Option<HashMap<String, Number>>
 }
 
 impl BaseItem {
@@ -64,7 +74,20 @@ impl BaseOneChampion {
 
 #[cfg(test)]
 mod resources_test {
+    use std::fs::File;
+    use std::io::prelude::*;
+    use super::*;
+    //use polars::prelude::*;
+    //use polars::lazy::dsl::col;
+
     #[test]
     fn build_item() {
+        let mut file = File::open("data/item_processed.json").unwrap();
+        let mut contents = String::new();
+        file.read_to_string(&mut contents).unwrap();
+
+        let json: Vec<BaseItem> = serde_json::from_str(&contents).unwrap();
+        println!("{:?}", json);
+        assert_eq!(1 + 1, 2)
     }
 }
