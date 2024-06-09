@@ -4,7 +4,7 @@ use std::collections::HashMap;
 use std::fs::File;
 use std::io::Read;
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 #[serde(untagged)]
 pub enum Number {
     Integer(i32),
@@ -12,14 +12,14 @@ pub enum Number {
     Null,
 }
 
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub enum EffectMod {
     Add,
     Times,
     Nothing,
 }
 
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub struct Effect {
     pub operator: EffectMod,
     pub stat_field: String,
@@ -30,12 +30,13 @@ pub enum EffectError {
     EffectNotMatch,
 }
 
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub struct Item {
+    pub id: String,
     pub effect: Effect,
 }
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct BaseItem {
     pub id: String,
     pub name: String,
@@ -146,24 +147,20 @@ pub fn get_item_effect(key: &str) -> Effect {
 }
 
 pub fn process_items(items: Vec<BaseItem>) -> Vec<Item> {
-    items
-        .into_iter()
-        .map(|item: BaseItem| {
-            if let Some(stat) = item.stats {
-                let keys = stat.keys();
-                for key in keys {
-                    let effect = get_item_effect(key);
-                    println!("{:?}", effect);
-                }
+    let mut new_items = vec![];
+
+    for item in items.into_iter() {
+        if let Some(stat) = &item.stats {
+            let keys = stat.keys();
+            for key in keys {
+                let effect = get_item_effect(key);
+                let id = &item.id;
+                new_items.push(Item { id: id.to_string(), effect })
             }
-            Item {
-                effect: Effect {
-                    operator: EffectMod::Add,
-                    stat_field: "something".to_string(),
-                },
-            }
-        })
-        .collect()
+        }
+    }
+
+    return new_items;
 }
 
 #[cfg(test)]
@@ -173,8 +170,19 @@ mod resources_test {
     #[test]
     fn build_item() {
         let items = load_items("data/item_processed.json");
+        let processed = process_items(items);
 
-        let _processed = process_items(items);
-        assert_eq!(1 + 1, 2)
+        assert_eq!(processed[0], Item { id: "1001".to_string(), effect: Effect { operator: EffectMod::Add, stat_field: "movespeed".to_string() } })
+    }
+
+    #[test]
+    fn calculate_stats() {
+        let items = load_items("data/item_processed.json");
+        let _processed = process_items(items.clone());
+        let _base_one = BaseOneChampion::build();
+        //let chosen_items: Vec<_> = vec![];
+
+        println!("{:?}", items.into_iter().find(|item: &BaseItem| item.id == "1001".to_string()));
+
     }
 }
