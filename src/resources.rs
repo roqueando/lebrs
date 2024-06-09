@@ -4,7 +4,7 @@ use std::collections::HashMap;
 use std::fs::File;
 use std::io::Read;
 
-#[derive(Serialize, Deserialize, Debug, Clone)]
+#[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]
 #[serde(untagged)]
 pub enum Number {
     Integer(i32),
@@ -23,6 +23,7 @@ pub enum EffectMod {
 pub struct Effect {
     pub operator: EffectMod,
     pub stat_field: String,
+    pub value: Number
 }
 
 #[derive(Debug)]
@@ -109,7 +110,7 @@ pub fn stats_from_to() -> HashMap<&'static str, &'static str> {
     return stats;
 }
 
-pub fn get_item_effect(key: &str) -> Effect {
+pub fn get_item_effect(key: &str, value: Number) -> Effect {
     let stats_base = stats_from_to();
     if key.contains("Flat") {
         let replaced = key.replace("Flat", "");
@@ -120,11 +121,13 @@ pub fn get_item_effect(key: &str) -> Effect {
             Effect {
                 operator: EffectMod::Add,
                 stat_field: field.to_string(),
+                value
             }
         } else {
             Effect {
                 operator: EffectMod::Nothing,
                 stat_field: "".to_string(),
+                value
             }
         }
     } else {
@@ -136,11 +139,13 @@ pub fn get_item_effect(key: &str) -> Effect {
             Effect {
                 operator: EffectMod::Times,
                 stat_field: field.to_string(),
+                value
             }
         } else {
             Effect {
                 operator: EffectMod::Nothing,
                 stat_field: "".to_string(),
+                value
             }
         }
     }
@@ -152,10 +157,13 @@ pub fn process_items(items: Vec<BaseItem>) -> Vec<Item> {
     for item in items.into_iter() {
         if let Some(stat) = &item.stats {
             let keys = stat.keys();
+
             for key in keys {
-                let effect = get_item_effect(key);
-                let id = &item.id;
-                new_items.push(Item { id: id.to_string(), effect })
+                if let Some(value) = stat.get(key) {
+                    let effect = get_item_effect(key, value.clone());
+                    let id = &item.id;
+                    new_items.push(Item { id: id.to_string(), effect })
+                }
             }
         }
     }
@@ -172,17 +180,27 @@ mod resources_test {
         let items = load_items("data/item_processed.json");
         let processed = process_items(items);
 
-        assert_eq!(processed[0], Item { id: "1001".to_string(), effect: Effect { operator: EffectMod::Add, stat_field: "movespeed".to_string() } })
+        assert_eq!(processed[0],
+            Item {
+                id: "1001".to_string(),
+                effect: Effect {
+                    operator: EffectMod::Add,
+                    stat_field: "movespeed".to_string(),
+                    value: Number::Integer(25)
+                }
+            })
     }
 
     #[test]
     fn calculate_stats() {
         let items = load_items("data/item_processed.json");
-        let _processed = process_items(items.clone());
-        let _base_one = BaseOneChampion::build();
-        //let chosen_items: Vec<_> = vec![];
+        let processed = process_items(items);
+        let chosen_items: Vec<&str> = vec!["1054", "3047", "3133", "3057", "3067"];
 
-        println!("{:?}", items.into_iter().find(|item: &BaseItem| item.id == "1001".to_string()));
+        //let base_one = BaseOneChampion::build()
+         //       .update()
+
+        println!("{:?}", processed.into_iter().find(|item: &Item| item.id == "1001".to_string()));
 
     }
 }
