@@ -7,7 +7,7 @@ use candle_nn::SGD;
 use candle_nn::{Linear, Module, VarBuilder};
 
 pub enum ModelError {
-    ModelNotTrainedEnough
+    ModelNotTrainedEnough,
 }
 
 #[derive(Clone)]
@@ -53,7 +53,6 @@ impl LeBRS {
     }
 }
 
-
 pub fn train(data: Dataset, dev: &Device) -> Result<LeBRS, Error> {
     let x_train = data.x_train.to_device(dev)?;
     let _x_test = data.x_test.to_device(dev)?;
@@ -75,15 +74,15 @@ pub fn train(data: Dataset, dev: &Device) -> Result<LeBRS, Error> {
         // calculate loss by mse
         // use sgd to optimize weights
         // TODO: get
-
     }
 
     if final_acc < 100.0 {
-        Err(candle_core::error::Error::Msg("Model not trained enough".to_string()))
+        Err(candle_core::error::Error::Msg(
+            "Model not trained enough".to_string(),
+        ))
     } else {
         Ok(model)
     }
-
 }
 
 #[cfg(test)]

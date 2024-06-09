@@ -1,38 +1,48 @@
 use candle_core::Tensor;
+use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
-use serde::{Serialize, Deserialize};
+use std::fs::File;
+use std::io::Read;
 
 #[derive(Serialize, Deserialize, Debug)]
 #[serde(untagged)]
 pub enum Number {
     Integer(i32),
     Float(f32),
-    Null
+    Null,
 }
 
+#[derive(Debug)]
 pub enum EffectMod {
     Add,
-    Times
+    Times,
+    Nothing,
 }
 
+#[derive(Debug)]
 pub struct Effect {
     pub operator: EffectMod,
-    pub stat_field: String
+    pub stat_field: String,
 }
 
+#[derive(Debug)]
+pub enum EffectError {
+    EffectNotMatch,
+}
+
+#[derive(Debug)]
 pub struct Item {
-    pub effect: Effect
+    pub effect: Effect,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct BaseItem {
     pub id: String,
     pub name: String,
-    pub stats: Option<HashMap<String, Number>>
+    pub stats: Option<HashMap<String, Number>>,
 }
 
-impl BaseItem {
-}
+impl BaseItem {}
 
 #[derive(Clone)]
 pub struct BaseOneChampion {
@@ -46,7 +56,7 @@ pub struct BaseOneChampion {
     pub mpregen: i32,
     pub crit: i32,
     pub attackdamage: i32,
-    pub attackspeed: f32
+    pub attackspeed: f32,
 }
 
 impl BaseOneChampion {
@@ -62,7 +72,7 @@ impl BaseOneChampion {
             mpregen: 1,
             crit: 1,
             attackdamage: 1,
-            attackspeed: 1.0
+            attackspeed: 1.0,
         }
     }
 
@@ -72,22 +82,99 @@ impl BaseOneChampion {
     }
 }
 
+pub fn load_items(path: &str) -> Vec<BaseItem> {
+    let mut file = File::open(path).unwrap();
+    let mut contents = String::new();
+    file.read_to_string(&mut contents).unwrap();
+
+    let items: Vec<BaseItem> = serde_json::from_str(&contents).unwrap();
+    return items;
+}
+
+pub fn stats_from_to() -> HashMap<&'static str, &'static str> {
+    let mut stats = HashMap::new();
+
+    stats.insert("hppool", "hp");
+    stats.insert("physicaldamage", "attackdamage");
+    stats.insert("magicdamage", "attackdamage");
+    stats.insert("armor", "armor");
+    stats.insert("attackspeed", "attackspeed");
+    stats.insert("spellblock", "spellblock");
+    stats.insert("movementspeed", "movespeed");
+    stats.insert("mppool", "mp");
+    stats.insert("critchance", "crit");
+    stats.insert("hpregen", "hpregen");
+
+    return stats;
+}
+
+pub fn get_item_effect(key: &str) -> Effect {
+    let stats_base = stats_from_to();
+    if key.contains("Flat") {
+        let replaced = key.replace("Flat", "");
+        let replaced = replaced.replace("Mod", "");
+        let new_key = replaced.to_lowercase();
+
+        if let Some(field) = stats_base.get(new_key.as_str()) {
+            Effect {
+                operator: EffectMod::Add,
+                stat_field: field.to_string(),
+            }
+        } else {
+            Effect {
+                operator: EffectMod::Nothing,
+                stat_field: "".to_string(),
+            }
+        }
+    } else {
+        let replaced = key.replace("Percent", "");
+        let replaced = replaced.replace("Mod", "");
+        let new_key = replaced.to_lowercase();
+
+        if let Some(field) = stats_base.get(new_key.as_str()) {
+            Effect {
+                operator: EffectMod::Times,
+                stat_field: field.to_string(),
+            }
+        } else {
+            Effect {
+                operator: EffectMod::Nothing,
+                stat_field: "".to_string(),
+            }
+        }
+    }
+}
+
+pub fn process_items(items: Vec<BaseItem>) -> Vec<Item> {
+    items
+        .into_iter()
+        .map(|item: BaseItem| {
+            if let Some(stat) = item.stats {
+                let keys = stat.keys();
+                for key in keys {
+                    let effect = get_item_effect(key);
+                    println!("{:?}", effect);
+                }
+            }
+            Item {
+                effect: Effect {
+                    operator: EffectMod::Add,
+                    stat_field: "something".to_string(),
+                },
+            }
+        })
+        .collect()
+}
+
 #[cfg(test)]
 mod resources_test {
-    use std::fs::File;
-    use std::io::prelude::*;
     use super::*;
-    //use polars::prelude::*;
-    //use polars::lazy::dsl::col;
 
     #[test]
     fn build_item() {
-        let mut file = File::open("data/item_processed.json").unwrap();
-        let mut contents = String::new();
-        file.read_to_string(&mut contents).unwrap();
+        let items = load_items("data/item_processed.json");
 
-        let json: Vec<BaseItem> = serde_json::from_str(&contents).unwrap();
-        println!("{:?}", json);
+        let _processed = process_items(items);
         assert_eq!(1 + 1, 2)
     }
 }
