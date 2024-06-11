@@ -196,11 +196,21 @@ mod resources_test {
         let items = load_items("data/item_processed.json");
         let processed = process_items(items);
         let chosen_items: Vec<&str> = vec!["1054", "3047", "3133", "3057", "3067"];
+        //let chosen_processed_items = processed.into_iter()
+        //    .filter(|item| {
+        //        for ci in chosen_items {
+        //            return item.id.as_str() == ci 
+        //        }
+        //        //&item.id.as_str() == chosen_items
+        //    });
+        
+        // TODO: probably I'll need to zip with chosen_items and filter with these two ids
 
         //let base_one = BaseOneChampion::build()
-         //       .update()
+        //    .update(chosen_processed_items);
 
-        println!("{:?}", processed.into_iter().find(|item: &Item| item.id == "1001".to_string()));
+        //println!("{:?}", processed.into_iter().find(|item: &Item| item.id == "1001".to_string()));
+        //println!("{:?}", chosen_processed_items);
 
     }
 }

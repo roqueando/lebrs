@@ -1,5 +1,6 @@
 //use lebrs::neural::train;
 use polars::{lazy::dsl::col, prelude::*};
+use lebrs::neural::Dataset;
 
 #[allow(dead_code)]
 struct SplittedDataset {
@@ -83,6 +84,5 @@ fn main() {
     ]);
 
     let dataset = data_split(data, 0.2, 0.8);
-    println!("{:?}", dataset.x_test);
     //train();
 }
