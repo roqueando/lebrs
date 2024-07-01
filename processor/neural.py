@@ -1,3 +1,10 @@
+import torch
+from torch import nn
+import math
+import item_calculator
+from item_calculator import update_stats, choose_items
+from more_itertools import chunked
+
 device = "cpu"
 print(f"Using {device} device")
 
@@ -17,10 +24,13 @@ BASE_ONE = {
 
 # HYPER PARAMETERS
 LEARNING_RATE = 1e-3
-EPOCHS = 10
-MAX_ITEMS = 447113
-MIN_ITEMS = 1001
-BATCH_SIZE = 64
+EPOCHS = 2
+MAX_ITEMS = 447113.0
+MIN_ITEMS = 1001.0
+BATCH_SIZE = 5000
+
+def exilu(x):
+    return x if x >= MIN_ITEMS and x <= MAX_ITEMS else 0.0
 
 class ExiLU(nn.Module):
     '''Applies Existent Linear Unit activation for existent items'''
@@ -28,43 +38,59 @@ class ExiLU(nn.Module):
         super().__init__()
 
     def forward(self, tensor: torch.Tensor):
-        return tensor.detach().apply_(lambda x: x if x >= MIN_ITEMS or x <= MAX_ITEMS else 0)
+        return tensor.detach().apply_(lambda x: exilu(x))
 
 class LeBRS(nn.Module):
     def __init__(self):
         super().__init__()
         self.linear_stack = nn.Sequential(
             nn.Linear(6, 8),
-            ExiLU(),
+            #ExiLU(),
+            nn.ReLU(),
             nn.Linear(8, 8),
-            ExiLU(),
+            #ExiLU(),
+            nn.ReLU(),
             nn.Linear(8, 6),
+            #ExiLU(),
+            nn.ReLU(),
         )
 
     def forward(self, x):
         items = self.linear_stack(x)
         return items
 
-def train_loop(data, model, loss_fn, optimizer):
+def train_loop(data, model, optimizer, item_df, epoch):
+    chunks = list(chunked(data, BATCH_SIZE))
     model.train()
-    for batch, (X, y) in enumerate(data):
-        pred = model(X)
-        # stat_loss_fn(pred, y)
-        loss = loss_fn(pred, y)
+    batch_count = 0
 
-        loss.backward()
-        optimizer.step()
-        optimizer.zero_grad()
+    for chunk in chunks:
+        for batch, (X, y) in enumerate(chunk):
+            pred = model(X)
+            l = stat_loss_fn(pred, y, item_df)
+            l.backward()
 
-        if batch % 100 == 0:
-            li = loss.item()
-            print(f"loss: {li:>7f} ")
+            optimizer.step()
+            optimizer.zero_grad()
 
+            if batch == BATCH_SIZE - 1:
+                li = l.item()
+                batch_count = batch_count + 1
+                print(f"BATCH [{batch_count}/{len(chunks)}] COMPLETED")
+                print(f"================================")
+                print(f"LOSS: {li:>7f}")
+                print(f"PRED: {pred}")
+                print(f"================================")
+    path = f"epoch_{epoch}.pt"
+    torch.save({
+        'epoch': epoch,
+        'model_state_dict': model.state_dict(),
+        'optimizer_state_dict': optimizer.state_dict(),
+    }, path)
 def stat_loss_fn(y_pred, y, item_df):
-    pred_mapped = y_pred.detach().apply_(lambda x: math.floor(x))
+    y_tensor = torch.tensor(update_stats(BASE_ONE, choose_items(y.tolist(), item_df)), requires_grad=True)
+    y_pred_tensor = torch.tensor(update_stats(BASE_ONE, choose_items(y_pred.tolist(), item_df)), requires_grad=True)
 
-    t = y.detach().apply_(lambda x: )
-    #t = map(lambda x: update_stats(BASE_ONE, choose_items(x.tolist(), item_df)), y)
-    #y_choose_items = choose_items(y[0].tolist(), item_df)
-    #y_base_one = update_stats(BASE_ONE, y_choose_items)
-    print(t)
+    loss = nn.MSELoss()
+    result = loss(y_pred_tensor, y_tensor)
+    return result

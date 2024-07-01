@@ -1,5 +1,6 @@
 from enum import StrEnum
 from dataclasses import dataclass
+from pandas import DataFrame
 
 STATS = {
     "hppool": "hp",
@@ -62,23 +63,23 @@ def get_item_effect(key: str, value) -> Effect:
         return Effect(operator=EffectMod.NOTHING, stat_field="", value=0)
 
 
-def update_stats(boc: dict, items: list[item_calculator.Effect]) -> list:
+def update_stats(boc: dict, items: list[Effect]) -> list:
     updated_boc = {**boc}
     for item in items:
-        if item.operator == item_calculator.EffectMod.ADD:
+        if item.operator == EffectMod.ADD:
             updated_boc[item.stat_field] = boc[item.stat_field] + item.value
-        if item.operator == item_calculator.EffectMod.TIMES:
+        if item.operator == EffectMod.TIMES:
             updated_boc[item.stat_field] = boc[item.stat_field] * item.value
 
     return list(updated_boc.values())
 
 
-def choose_items(items: list, df: DataFrame) -> list[item_calculator.Effect]:
+def choose_items(items: list, df: DataFrame) -> list[Effect]:
     effects = []
     for item in items:
         item_stats = df.loc[df['id'] == item]['stats']
         if len(item_stats.values) > 0:
             if item_stats.values[0] is not None:
                 for key, value in item_stats.values[0].items():
-                    effects.append(item_calculator.get_item_effect(key, value))
+                    effects.append(get_item_effect(key, value))
     return effects
