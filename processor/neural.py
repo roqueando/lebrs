@@ -5,7 +5,7 @@ import item_calculator
 from item_calculator import update_stats, choose_items
 from more_itertools import chunked
 
-device = "cpu"
+device = "xpu"
 print(f"Using {device} device")
 
 BASE_ONE = {
