@@ -54,7 +54,7 @@ def choose(df: DataFrame) -> list:
         items = item_calculator.choose_items(row[1].values, item_df)
         stats = item_calculator.update_stats(BASE_ONE, items)
 
-        #win = int(df.iloc[row[0]]['win'])
+        win = df['win'][row[0]]
         new_dict = {
             'hp': stats[0],
             'mp': stats[1],
@@ -67,7 +67,7 @@ def choose(df: DataFrame) -> list:
             'crit': stats[8],
             'attackdamage': stats[9],
             'attackspeed': round(stats[10], 2),
-            #'win': win
+            'win': win
         }
         dict_frame.append(new_dict)
     return pd.DataFrame(dict_frame)
@@ -78,9 +78,9 @@ def transform_into_base_one_champs(df: DataFrame):
     data_list = []
     with Pool(processes=mp.cpu_count()) as pool:
         split = np.array_split(df, mp.cpu_count() * 2)
-        split = tqdm.tqdm(split)
+        split = tqdm.tqdm(split, "splitting")
         ret_list = pool.map(choose, split)
-        ret_list = tqdm.tqdm(ret_list)
+        ret_list = tqdm.tqdm(ret_list, "transforming")
         output = pd.concat(ret_list)
 
     return output
@@ -90,11 +90,6 @@ def main():
     print("transforming...")
     data = transform_into_base_one_champs(matches_df)
     data.to_csv('data_processed.csv', index=True)
-    #print("saving X")
-    #X.to_csv('data_processed.csv', index=False)
-
-    #print("saving Labels")
-    #Y.to_csv('label_processed.csv', index=False)
 
 if __name__ == '__main__':
     main()
