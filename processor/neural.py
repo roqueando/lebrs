@@ -5,7 +5,7 @@ import item_calculator
 from item_calculator import update_stats, choose_items
 from more_itertools import chunked
 
-device = "xpu"
+device = "cpu"
 print(f"Using {device} device")
 
 BASE_ONE = {
@@ -23,14 +23,14 @@ BASE_ONE = {
 }
 
 # HYPER PARAMETERS
-LEARNING_RATE = 1e-3
+LEARNING_RATE = 1e-3 # 0.0001
 EPOCHS = 2
 MAX_ITEMS = 447113.0
 MIN_ITEMS = 1001.0
-BATCH_SIZE = 5000
+BATCH_SIZE = 1000
 
 def exilu(x):
-    return x if x >= MIN_ITEMS and x <= MAX_ITEMS else 0.0
+    return x if x >= MIN_ITEMS and x <= MAX_ITEMS else 1001.0
 
 class ExiLU(nn.Module):
     '''Applies Existent Linear Unit activation for existent items'''
@@ -43,21 +43,30 @@ class ExiLU(nn.Module):
 class LeBRS(nn.Module):
     def __init__(self):
         super().__init__()
+        self.item_embedding = nn.Embedding(num_embeddings=446112, embedding_dim=256)
+        self.fully_connected_1 = nn.Linear(6, 8, dtype=torch.long)
+        self.fully_connected_2 = nn.Linear(8, 6)
+        self.dropout = nn.Dropout(p=0.2)
+        self.relu = nn.ReLU()
+        self.exilu = ExiLU()
         self.linear_stack = nn.Sequential(
             nn.Linear(6, 8),
-            #ExiLU(),
-            nn.ReLU(),
-            nn.Linear(8, 8),
-            #ExiLU(),
-            nn.ReLU(),
+            #nn.ReLU(),
+            nn.Dropout(p=0.5),
             nn.Linear(8, 6),
             #ExiLU(),
-            nn.ReLU(),
+            #nn.ReLU(),
+            ExiLU()
         )
 
     def forward(self, x):
-        items = self.linear_stack(x)
-        return items
+        x = x.to(torch.int)
+        item_embedded = self.item_embedding(x)
+        x = self.relu(self.fully_connected_1(item_embedded))
+        x = self.dropout(x)
+        output = self.fully_connected_2(x)
+        #items = self.linear_stack(x)
+        return output
 
 def train_loop(data, model, optimizer, item_df, epoch):
     chunks = list(chunked(data, BATCH_SIZE))
@@ -74,7 +83,13 @@ def train_loop(data, model, optimizer, item_df, epoch):
             optimizer.zero_grad()
 
             if batch == BATCH_SIZE - 1:
+                print(f"X: {X}")
+                print("---------------------")
                 li = l.item()
+                print(f"loss: {l.item}")
+                print("---------------------")
+                with open(f'loss_{epoch}.txt', 'a') as f:
+                    f.write(f"{li:>2f}\n")
                 batch_count = batch_count + 1
                 print(f"BATCH [{batch_count}/{len(chunks)}] COMPLETED")
                 print(f"================================")
@@ -86,11 +101,29 @@ def train_loop(data, model, optimizer, item_df, epoch):
         'epoch': epoch,
         'model_state_dict': model.state_dict(),
         'optimizer_state_dict': optimizer.state_dict(),
+        'loss': l.item()
     }, path)
-def stat_loss_fn(y_pred, y, item_df):
-    y_tensor = torch.tensor(update_stats(BASE_ONE, choose_items(y.tolist(), item_df)), requires_grad=True)
-    y_pred_tensor = torch.tensor(update_stats(BASE_ONE, choose_items(y_pred.tolist(), item_df)), requires_grad=True)
 
-    loss = nn.MSELoss()
+def test_loop(data, model, item_df, epoch):
+    chunks = list(chunked(data, BATCH_SIZE))
+    model.eval()
+    test_loss, correct = 0, 0
+
+    with torch.no_grad():
+        for chunk in chunks:
+            for batch, (X, y) in enumerate(chunk):
+                pred = model(X)
+                test_loss += stat_loss_fn(pred, y, item_df).item()
+                correct += (pred.argmax(1) == y).type(torch.float).sum().item()
+    test_loss /= len(chunks)
+    correct /= len(chunks)
+    print(f"Test error: \nAccuracy: {100*correct:>0.1f},\nAvg loss: {test_loss:>8f}\n")
+
+def stat_loss_fn(y_pred, y, item_df):
+    y_pred_tensor = torch.tensor(update_stats(BASE_ONE, choose_items(y_pred.tolist(), item_df)), requires_grad=True)
+    y_tensor = torch.tensor(update_stats(BASE_ONE, choose_items(y.tolist(), item_df)), requires_grad=True)
+
+    # previous: CrossEntropyLoss
+    loss = nn.HuberLoss() # EUREKA: PROBABLY IS THIS
     result = loss(y_pred_tensor, y_tensor)
     return result

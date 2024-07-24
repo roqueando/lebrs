@@ -7,29 +7,20 @@ from torch import nn
 import math
 
 import item_calculator
+import process_items
 import neural
 
 def split_matches(df: DataFrame) -> Tuple[DataFrame, DataFrame]:
     x = df.loc[df['win'] == 0]
     y = df.loc[df['win'] == 1]
+    #stats = ['hp','mp','movespeed','armor','spellblock','attackrange','hpregen','mpregen','crit','attackdamage','attackspeed']
+    stats = ['item1','item2','item3','item4','item5','item6']
 
-    x = x[['item1', 'item2', 'item3', 'item4', 'item5', 'item6']].astype(float)
-    y = y[['item1', 'item2', 'item3', 'item4', 'item5', 'item6']].astype(float)
+
+    x = x[stats].astype(float)
+    y = y[stats].astype(float)
 
     return x, y
-
-def clean_matches(df: DataFrame) -> DataFrame:
-    return df[['item1', 'item2', 'item3', 'item4', 'item5', 'item6', 'win']]
-
-def choose_items(items: list, df: DataFrame) -> list[item_calculator.Effect]:
-    effects = []
-    for item in items:
-        item_stats = df.loc[df['id'] == item]['stats']
-        if len(item_stats.values) > 0:
-            if item_stats.values[0] is not None:
-                for key, value in item_stats.values[0].items():
-                    effects.append(item_calculator.get_item_effect(key, value))
-    return effects
 
 def to_ndarray(boc: dict) -> list:
     arr = []
@@ -43,11 +34,12 @@ def main():
     item_df = item_df[['id', 'name', 'stats']]
 
     matches_df = pd.read_csv("../data/stats1.csv")
-    x, y = split_matches(clean_matches(matches_df))
+    x, y = split_matches(process_items.clean_matches(matches_df))
 
     model = neural.LeBRS().to(neural.device)
+    #model = ipex.optimize(model, torch.float32)
 
-    x_train = torch.tensor(x.sample(frac=0.8, random_state=200).values) \
+    x_train = torch.tensor(x.sample(frac=0.1, random_state=200).values) \
         .type(torch.float32) \
         .to(neural.device)
 
@@ -55,7 +47,7 @@ def main():
         .type(torch.float32) \
         .to(neural.device)
 
-    y_train = torch.tensor(y.sample(frac=0.8, random_state=200).values) \
+    y_train = torch.tensor(y.sample(frac=0.1, random_state=200).values) \
         .type(torch.float32) \
         .to(neural.device)
     y_test = torch.tensor(y.sample(frac=0.2, random_state=200).values) \
@@ -69,11 +61,10 @@ def main():
     for t in range(neural.EPOCHS):
         print(f"Epoch: {t+1}\n--------------------------")
         neural.train_loop(list(zip(x_train, y_train)), model, optimizer, item_df, t)
+        #neural.test_loop(list(zip(x_test, y_test)), model, item_df, t)
 
     print('==========================')
     print("done!")
-    #chosen_items = choose_items([1001, 1054, 3047, 3067, 2045, 2001], item_df)
-    #base_one = update_stats(BASE_ONE, chosen_items)
 
 
 if __name__ == '__main__':

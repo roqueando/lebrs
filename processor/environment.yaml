@@ -1,0 +1,13 @@
+name: lebrs
+channels:
+  - conda-forge
+  - intel
+dependencies:
+  - python=3.11
+  - anaconda
+  - pip
+  - pip:
+    - pandas
+    - torch
+    - more-itertools
+    - tqdm

@@ -2,7 +2,7 @@ from neural import LeBRS, device, LEARNING_RATE
 from torch import optim
 import torch
 import pandas as pd
-from main import split_matches, clean_matches
+from main import split_matches
 
 INPUT_EPOCH = 0
 model = LeBRS().to(device)
@@ -17,8 +17,8 @@ epoch = checkpoint['epoch']
 model.eval()
 
 with torch.no_grad():
-    matches_df = pd.read_csv("../data/stats1.csv")
-    x, y = split_matches(clean_matches(matches_df))
+    matches_df = pd.read_csv("./data_processed.csv")
+    x, y = split_matches(matches_df)
 
     x_test = torch.tensor(x.sample(frac=0.2, random_state=200).values) \
         .type(torch.float32) \
